@@ -1,0 +1,4 @@
+interface:
+  display_name: "CUMCM Paper Distillation"
+  short_description: "按 v1.1 深度蒸馏 CUMCM 历史论文并审计证据"
+  default_prompt: "Use $cumcm-paper-distillation to deep-distill the specified historical CUMCM paper with page-level traceability and update repository progress."

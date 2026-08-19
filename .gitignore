@@ -203,6 +203,17 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# CUMCM historical-literature local sources and build artifacts
+**/.DS_Store
+/literature/raw_papers/
+/literature/extracted/
+/literature/acquisition/
+/literature/quarantine/
+/literature/tmp/
+/literature/.cache/
+/literature/**/__pycache__/
+/literature/**/*.tmp
+
 # Ruff stuff:
 .ruff_cache/
 

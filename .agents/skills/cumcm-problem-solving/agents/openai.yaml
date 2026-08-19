@@ -1,0 +1,4 @@
+interface:
+  display_name: "CUMCM Problem Solving"
+  short_description: "基于当前赛题与历史蒸馏知识设计并验证 CUMCM 建模方案"
+  default_prompt: "Use $cumcm-problem-solving to analyze the current CUMCM problem, retrieve relevant historical methods, compare candidate pipelines, and design validation before implementation."
