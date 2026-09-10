@@ -1,0 +1,46 @@
+{
+  "cutoff": "2025-02-01T00:00:00",
+  "start": "2025-01-15",
+  "end": "2025-01-31",
+  "selected_variants": [
+    {
+      "name": "hourly_risk",
+      "bias_days": 0,
+      "margin": "hourly",
+      "quantile": 0.65,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "bias_hourly_risk",
+      "bias_days": 3,
+      "margin": "hourly",
+      "quantile": 0.8,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "price_reserve",
+      "bias_days": 0,
+      "margin": "hourly",
+      "quantile": 0.65,
+      "controller": "price_reserve",
+      "reserve_alpha": 0.5,
+      "scenario_count": 0
+    },
+    {
+      "name": "scenario",
+      "bias_days": 0,
+      "margin": "none",
+      "quantile": 0.8,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 3
+    }
+  ],
+  "deployment_family": "price_reserve",
+  "criterion": "January cost less terminal replacement-energy credit; all parameters frozen before February evaluation",
+  "retrospective_development": true
+}

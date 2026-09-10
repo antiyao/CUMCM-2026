@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "commit_sha": "9cf7d9aea7d84754db4c167ab04b299d33c444bc",
+  "upstream_path": "skills/matplotlib",
+  "upstream_version": "1.2",
+  "code_license": "MIT (repository LICENSE.md; library licensing is separate)",
+  "installed_utc": "2026-09-10T14:18:03.659089+00:00",
+  "upstream_snapshot": "results/audit/external_skills/9cf7d9aea7d84754db4c167ab04b299d33c444bc",
+  "local_modifications": [
+    "Added project-scoped local execution and figure integrity boundaries after frontmatter.",
+    "Removed upstream automatic paper-citation instruction; unchanged upstream source retained in isolated audit directory.",
+    "Replaced environment installation/upgrade setup with current-project environment guidance.",
+    "Replaced suppress-font-warning recommendation with glyph verification.",
+    "Clarified frontmatter: MIT applies to this skill; current project runtime is authoritative over upstream compatibility pins."
+  ],
+  "upstream_skill_sha256": "57c8fb3c504a7d11c338800d8dc2124d04176d9ec5d0428622d05bb498e3e8e4",
+  "installed_skill_sha256": "67b0df2fc2cd2d633af7f05c46194f59fb72c34cedbf306cbaf92fe7c193fe22",
+  "files": [
+    "LICENSE.md",
+    "SKILL.md",
+    "references/api_reference.md",
+    "references/common_issues.md",
+    "references/plot_types.md",
+    "references/styling_guide.md",
+    "scripts/plot_template.py",
+    "scripts/style_configurator.py"
+  ]
+}

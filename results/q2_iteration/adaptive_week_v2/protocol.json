@@ -1,0 +1,90 @@
+{
+  "candidates": [
+    {
+      "name": "legacy_margin_greedy",
+      "bias_days": 0,
+      "margin": "legacy",
+      "quantile": 0.8,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "hourly_q0",
+      "bias_days": 0,
+      "margin": "hourly",
+      "quantile": 0.0,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "hourly_q0.65",
+      "bias_days": 0,
+      "margin": "hourly",
+      "quantile": 0.65,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "hourly_q0.8",
+      "bias_days": 0,
+      "margin": "hourly",
+      "quantile": 0.8,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "hourly_q0.9",
+      "bias_days": 0,
+      "margin": "hourly",
+      "quantile": 0.9,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "bias_hourly_q0",
+      "bias_days": 3,
+      "margin": "hourly",
+      "quantile": 0.0,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "bias_hourly_q0.65",
+      "bias_days": 3,
+      "margin": "hourly",
+      "quantile": 0.65,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "bias_hourly_q0.8",
+      "bias_days": 3,
+      "margin": "hourly",
+      "quantile": 0.8,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    },
+    {
+      "name": "bias_hourly_q0.9",
+      "bias_days": 3,
+      "margin": "hourly",
+      "quantile": 0.9,
+      "controller": "greedy",
+      "reserve_alpha": 0.0,
+      "scenario_count": 0
+    }
+  ],
+  "window_days": 14,
+  "criterion": "past shadow cost minus known-price replacement value of SOC change",
+  "selection_timing": "before observing current date",
+  "virtual_warmup": "all shadow policies start 6000 on January 15; actual battery holds 6000 through January",
+  "retrospective_development": true
+}

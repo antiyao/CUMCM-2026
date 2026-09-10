@@ -1,0 +1,229 @@
+{
+  "external_results_independently_verified": {
+    "A_baseline": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.0,
+      "total_yuan": 15252429.004548863,
+      "planned_yuan": 12207687.548879484,
+      "emergency_yuan": 3044741.455669378,
+      "emergency_kwh": 498631.11238744046,
+      "unutilized_kwh": 1462327.775048915,
+      "initial_kwh": 6000.0,
+      "final_kwh": 5814.28768537037,
+      "net_load_mae_kw": 273.35125210115484,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 2.2737367544323206e-13,
+        "forecast_pv_max_abs_kwh": 6.821210263296962e-13,
+        "margin_max_abs_kwh": 0.0,
+        "state_max_abs_kwh": 9.094947017729282e-12,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 6.59383658785373e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    },
+    "B_bias_corrected": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.0,
+      "total_yuan": 15003195.322244098,
+      "planned_yuan": 12237155.685786324,
+      "emergency_yuan": 2766039.6364577743,
+      "emergency_kwh": 446116.5084638243,
+      "unutilized_kwh": 1428892.8832232049,
+      "initial_kwh": 6000.0,
+      "final_kwh": 5729.9747627160505,
+      "net_load_mae_kw": 288.1674110968539,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 4.547473508864641e-13,
+        "forecast_pv_max_abs_kwh": 9.094947017729282e-13,
+        "margin_max_abs_kwh": 0.0,
+        "state_max_abs_kwh": 1.0913936421275139e-11,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 8.185452315956354e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    },
+    "C_risk_only": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.8,
+      "total_yuan": 13948482.186173832,
+      "planned_yuan": 13369672.386637565,
+      "emergency_yuan": 578809.7995362668,
+      "emergency_kwh": 94550.82897441105,
+      "unutilized_kwh": 2741423.0144766564,
+      "initial_kwh": 6000.0,
+      "final_kwh": 6307.595127904759,
+      "net_load_mae_kw": 273.35125210115484,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 2.2737367544323206e-13,
+        "forecast_pv_max_abs_kwh": 6.821210263296962e-13,
+        "margin_max_abs_kwh": 4.334310688136611e-13,
+        "state_max_abs_kwh": 7.73070496506989e-12,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 6.551204023708124e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    },
+    "D_bias_and_risk": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.8,
+      "total_yuan": 13869999.375268735,
+      "planned_yuan": 13484631.717986872,
+      "emergency_yuan": 385367.6572818631,
+      "emergency_kwh": 62713.82666445032,
+      "unutilized_kwh": 2888386.4222434103,
+      "initial_kwh": 6000.0,
+      "final_kwh": 6168.277145543211,
+      "net_load_mae_kw": 288.1674110968539,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 4.547473508864641e-13,
+        "forecast_pv_max_abs_kwh": 9.094947017729282e-13,
+        "margin_max_abs_kwh": 5.968558980384842e-13,
+        "state_max_abs_kwh": 9.094947017729282e-12,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 6.16751094639767e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    }
+  },
+  "local_rerun_independently_verified": {
+    "A_baseline": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.0,
+      "total_yuan": 15252416.700208358,
+      "planned_yuan": 12207675.24453898,
+      "emergency_yuan": 3044741.455669378,
+      "emergency_kwh": 498631.11238744046,
+      "unutilized_kwh": 1462327.775048915,
+      "initial_kwh": 6000.0,
+      "final_kwh": 5814.28768537037,
+      "net_load_mae_kw": 273.35125210115484,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 2.2737367544323206e-13,
+        "forecast_pv_max_abs_kwh": 6.821210263296962e-13,
+        "margin_max_abs_kwh": 0.0,
+        "state_max_abs_kwh": 9.094947017729282e-12,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 6.59383658785373e-12,
+        "cost_max_abs_yuan": 1.862645149230957e-09
+      }
+    },
+    "B_bias_corrected": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.0,
+      "total_yuan": 15003180.787295597,
+      "planned_yuan": 12237141.150837822,
+      "emergency_yuan": 2766039.6364577743,
+      "emergency_kwh": 446116.5084638243,
+      "unutilized_kwh": 1428892.8832232049,
+      "initial_kwh": 6000.0,
+      "final_kwh": 5727.732677098766,
+      "net_load_mae_kw": 288.1674110968539,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 4.547473508864641e-13,
+        "forecast_pv_max_abs_kwh": 9.094947017729282e-13,
+        "margin_max_abs_kwh": 0.0,
+        "state_max_abs_kwh": 1.0913936421275139e-11,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 8.185452315956354e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    },
+    "C_risk_only": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.8,
+      "total_yuan": 13948487.468843738,
+      "planned_yuan": 13369677.66930747,
+      "emergency_yuan": 578809.7995362668,
+      "emergency_kwh": 94550.82897441105,
+      "unutilized_kwh": 2741423.0144766564,
+      "initial_kwh": 6000.0,
+      "final_kwh": 6307.595127904759,
+      "net_load_mae_kw": 273.35125210115484,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 2.2737367544323206e-13,
+        "forecast_pv_max_abs_kwh": 6.821210263296962e-13,
+        "margin_max_abs_kwh": 4.334310688136611e-13,
+        "state_max_abs_kwh": 9.094947017729282e-12,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 6.59383658785373e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    },
+    "D_bias_and_risk": {
+      "passed": true,
+      "rows": 48096,
+      "q": 0.8,
+      "total_yuan": 13869999.023521954,
+      "planned_yuan": 13484631.366240092,
+      "emergency_yuan": 385367.6572818631,
+      "emergency_kwh": 62713.82666445032,
+      "unutilized_kwh": 2888382.9387545977,
+      "initial_kwh": 6000.0,
+      "final_kwh": 6168.277145543211,
+      "net_load_mae_kw": 288.1674110968539,
+      "checks": {
+        "input_load_max_abs_kwh": 2.2737367544323206e-13,
+        "input_pv_max_abs_kwh": 2.2737367544323206e-13,
+        "input_price_max_abs": 0.0,
+        "forecast_load_max_abs_kwh": 4.547473508864641e-13,
+        "forecast_pv_max_abs_kwh": 9.094947017729282e-13,
+        "margin_max_abs_kwh": 5.968558980384842e-13,
+        "state_max_abs_kwh": 9.094947017729282e-12,
+        "bus_max_abs_kwh": 2.2737367544323206e-13,
+        "greedy_action_max_abs_kwh": 6.16751094639767e-12,
+        "cost_max_abs_yuan": 0.0
+      }
+    }
+  },
+  "selected_parameters_match": {
+    "base": 0.8,
+    "corrected": 0.8
+  },
+  "local_environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "external_environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+  },
+  "future_perturbation_checks": {
+    "base_feb1_forecast_difference_kwh": 0.0,
+    "base_feb1_margin_difference_kwh": 0.0,
+    "corrected_feb1_forecast_difference_kwh": 0.0,
+    "corrected_feb1_margin_difference_kwh": 0.0
+  },
+  "original_directory_unchanged": true,
+  "scope": "All downloaded trajectories, their source inputs, prefix forecasts, risk margins, greedy actions and actual billings. External original files were not written."
+}

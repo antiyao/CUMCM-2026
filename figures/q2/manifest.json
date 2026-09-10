@@ -1,0 +1,19 @@
+{
+  "source_run": "results/backtests/q2-annual",
+  "files": [
+    "figures/q2/q2_cost.png",
+    "figures/q2/q2_cost.pdf",
+    "figures/q2/q2_cost.svg",
+    "figures/q2/q2_soc.png",
+    "figures/q2/q2_soc.pdf",
+    "figures/q2/q2_soc.svg",
+    "figures/q2/q2_emergency.png",
+    "figures/q2/q2_emergency.pdf",
+    "figures/q2/q2_emergency.svg",
+    "figures/q2/q2_cumulative_saving.png",
+    "figures/q2/q2_cumulative_saving.pdf",
+    "figures/q2/q2_cumulative_saving.svg"
+  ],
+  "transformations": "daily sums; fees /10000; interval arrays reshaped 334x144; no smoothing or exclusions",
+  "boundary": "day-ahead causal plans; idealized within-interval feedback; terminal states not forced equal"
+}

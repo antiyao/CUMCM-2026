@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-09-10T14:30:00.211569+00:00",
+  "config": {
+    "problem": "docs/problem/2026C/C\u9898.pdf",
+    "raw_dir": "data/raw/2026C",
+    "template_dir": "data/templates/2026C",
+    "processed_dir": "data/processed/2026C",
+    "efficiency_charge": 0.9,
+    "efficiency_discharge": 0.9,
+    "capacity_kwh": 12000,
+    "minimum_kwh": 1200,
+    "maximum_kwh": 10800,
+    "initial_kwh": 6000,
+    "power_kw": 5000,
+    "dt_hours": 0.16666666666666666,
+    "source_time_semantics": "preceding_interval_average",
+    "seed": 2026,
+    "mip_gap": 1e-08,
+    "solver_time_limit_seconds": 60
+  },
+  "arguments": {
+    "config": "configs/2026c.json",
+    "strategies": "q2_no_battery,q2_point,q2_margin,q2_margin_greedy",
+    "end_date": "2025-02-01",
+    "output": "results/backtests/q2-single-day"
+  },
+  "battery": {
+    "minimum": 1200,
+    "maximum": 10800,
+    "power_kw": 5000,
+    "eta_charge": 0.9,
+    "eta_discharge": 0.9,
+    "dt": 0.16666666666666666
+  },
+  "january_warmup": "battery disabled, initial and final energy 6000 kWh",
+  "real_time_observation": "current-interval integral feedback; no future interval visible",
+  "price_availability": "variable prices predicted from completed history; actual delivery price used only by settlement",
+  "files": {
+    "data/processed/2026C/actuals.csv": "b72d7eb290466260b4f564a23eb0732e6a42a342b8fc5fdfcfee3d06035b6c80",
+    "data/processed/2026C/forecasts.csv": "8415d0594927595e6303492a3a8327e4b904a2f14961fc7c4c08cb34de05c203",
+    "data/processed/2026C/q1.csv": "7b6d34cae6d3c7ab0f63dbd34d637419aa1d0bfe0a172562a31e327a710eb575",
+    "src/backtest.py": "c7930242a757cb00d49367b1089c401c932e8e1cfb4e24402f8b6d681cee1b42",
+    "src/forecasting.py": "d83f7e032897fbe5561930928867e02ee9054e47af32dad25b3e8bc6486a76c3",
+    "src/settlement.py": "5fe34b2e1d3bab82dc8df7899020907c2809fbff7022e0dc6468a147cce47071",
+    "src/dispatch.py": "43b3332e7f3955acca384b3ac966ce219148123b2bb0175178461079e01a4287"
+  }
+}

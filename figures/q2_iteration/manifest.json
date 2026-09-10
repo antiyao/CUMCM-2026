@@ -1,0 +1,13 @@
+{
+  "source": "results/q2_iteration/evaluation_v4",
+  "files": [
+    "figures/q2_iteration/cost_risk.png",
+    "figures/q2_iteration/cost_risk.pdf",
+    "figures/q2_iteration/cost_risk.svg",
+    "figures/q2_iteration/monthly_saving.png",
+    "figures/q2_iteration/monthly_saving.pdf",
+    "figures/q2_iteration/monthly_saving.svg"
+  ],
+  "transforms": "fees/1e6, emergency/1000, monthly savings/1000; no smoothing or exclusions",
+  "claim": "retrospective comparison; nonzero scatter x-axis encodes position; monthly bars start at zero"
+}

@@ -1,0 +1,29 @@
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\setCJKmainfont{Songti SC}
+\setlength{\emergencystretch}{2em}
+\title{AI工具使用详情（持续更新，待队员核验）}
+\author{}\date{2026年9月10日}
+\begin{document}\pagestyle{plain}\maketitle
+\section{工具名称与版本}
+使用Codex桌面应用中的AI编程助手及其子代理、代码执行和文件读取工具。本会话具体部署模型/应用版本未独立核验，应在提交前依据界面实际信息补全，不能编造版本。
+\section{实际目的和参与环节}
+本轮AI实际参与：读取根总指令与团队规则；阅读3页赛题、附件1--5和格式规范；审查并迁移原件路径；读取本地历史论文技能和三个相关蒸馏报告；审查两项外部绘图技能与官方AI规定；制定暂定计量/信息/结算解释；编写并执行数据审计、Q1基线/MILP/LP、独立测试、敏感性、Excel导出和图表；推进Q2--4因果预测和回测；撰写共享状态及结果报告。后续是否已执行，以运行记录为准，不能将未跑环节计为完成。
+\section{主要提示与交互过程}
+用户要求实际读取仓库总指令并执行完整任务；以现存题面和附件为准；先实际加载本地蒸馏技能和必要索引；外部技能按需审查，优先scientific-visualization与matplotlib；完成仓库与技能审计、全部题面附件检查、单位检查、信息/结算说明、第一问真实求解验证，并在数据充分时继续；保留队友修改，更新共享状态，不仅返回计划。
+
+根文件\texttt{CUMCM2026\_C\_Codex\_Master\_Prompt\_v2.md}保存实际总指令，原无v2文件不存在。主要实施分工是数据审计、外部技能审查及后续回测、模板导出、主模型与整体验证；各代理共享当前磁盘文件，结果按实际run id记录。AI未与队外人员发送消息，未查看本届他人完整解答，未执行Git发布或在线提交。
+\section{采纳、修改和核验状态}
+暂定采用的实现包括每10分钟平均功率解释、单程90\%效率、交流侧充放电功率、精确MILP物理约束、无售电、合同费与实际利用分开、因果信息快照。上述未明口径均标为待核验假设，模板错位被保留并公开映射；不把它们称为已获官方澄清。
+
+AI执行的数据完整性、哈希、物理守恒、成本对账、LP下界和模板数值复算属于自动核验；独立测试源码和运行输出均留在仓库。队员对每项模型、公式、代码、数据处理、结果和披露的人工审核尚未由本会话证实，审核人、日期、意见与修订内容待队员如实补充。不得以本文件或自动PASS替代人工审核。
+\section{证据位置}
+源材料和迁移哈希见\path{context/FILE_RELOCATION_MANIFEST.csv}。
+实际技能范围见\path{context/SKILL_USAGE.md}。
+数据审计见\path{results/audit/}；运行、验证与导出见\path{results/q1/}及\path{results/backtests/}。
+主张追溯见\path{paper/CLAIM_EVIDENCE_MAP.md}。
+提交前应按实际完成状态更新本文件，并保留完整提示、采纳和人工修改记录。
+
+官方依据：\href{https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html}{全国大学生数学建模竞赛人工智能工具使用规定（2026年试行）}，2026年8月3日发布，2026年9月1日起试行。官方文本与PDF哈希已保存到\path{results/audit/official_rules/}。
+\end{document}

@@ -1,0 +1,108 @@
+{
+  "run_id": "adaptive_annual_v3",
+  "created_utc": "2026-09-10T15:41:49.315319+00:00",
+  "actual_initial_soc": 6000,
+  "actual_start": "2025-02-01",
+  "actual_end": "2025-12-31",
+  "seed": 2026,
+  "real_time_observation": "ideal within-interval average power feedback, same as v1",
+  "protocol": {
+    "candidates": [
+      {
+        "name": "legacy_margin_greedy",
+        "bias_days": 0,
+        "margin": "legacy",
+        "quantile": 0.8,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "hourly_q0",
+        "bias_days": 0,
+        "margin": "hourly",
+        "quantile": 0.0,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "hourly_q0.65",
+        "bias_days": 0,
+        "margin": "hourly",
+        "quantile": 0.65,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "hourly_q0.8",
+        "bias_days": 0,
+        "margin": "hourly",
+        "quantile": 0.8,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "hourly_q0.9",
+        "bias_days": 0,
+        "margin": "hourly",
+        "quantile": 0.9,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "bias_hourly_q0",
+        "bias_days": 3,
+        "margin": "hourly",
+        "quantile": 0.0,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "bias_hourly_q0.65",
+        "bias_days": 3,
+        "margin": "hourly",
+        "quantile": 0.65,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "bias_hourly_q0.8",
+        "bias_days": 3,
+        "margin": "hourly",
+        "quantile": 0.8,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      },
+      {
+        "name": "bias_hourly_q0.9",
+        "bias_days": 3,
+        "margin": "hourly",
+        "quantile": 0.9,
+        "controller": "greedy",
+        "reserve_alpha": 0.0,
+        "scenario_count": 0
+      }
+    ],
+    "window_days": 14,
+    "criterion": "past shadow cost minus known-price replacement value of SOC change",
+    "selection_timing": "before observing current date",
+    "virtual_warmup": "all shadow policies start 6000 on January 15; actual battery holds 6000 through January",
+    "retrospective_development": true
+  },
+  "files": {
+    "src/q2_adaptive.py": "13973863070187cd9c250e4bd79aefa61d38dd7823ddc90b5c46fe9eb3b1b5a5",
+    "src/q2_iteration.py": "6106d89120f81c8b6b246d69e389df61ddfa80bc09d687436d985870535d7b59",
+    "src/dispatch.py": "43b3332e7f3955acca384b3ac966ce219148123b2bb0175178461079e01a4287",
+    "src/backtest.py": "e12e4840a9bbf14cd7ce5ff0cb1ab71556a2695c0707b46c654ed3057a7e85f8",
+    "src/forecasting.py": "d83f7e032897fbe5561930928867e02ee9054e47af32dad25b3e8bc6486a76c3",
+    "data/processed/2026C/actuals.csv": "b72d7eb290466260b4f564a23eb0732e6a42a342b8fc5fdfcfee3d06035b6c80",
+    "data/processed/2026C/q1.csv": "7b6d34cae6d3c7ab0f63dbd34d637419aa1d0bfe0a172562a31e327a710eb575"
+  }
+}

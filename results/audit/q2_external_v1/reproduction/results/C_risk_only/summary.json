@@ -1,0 +1,16 @@
+{
+  "tag": "C_risk_only",
+  "q": 0.8,
+  "days": 334,
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_kwh": 6000.0,
+  "final_kwh": 6307.595127904759,
+  "planned_yuan": 13369677.66930747,
+  "emergency_yuan": 578809.7995362668,
+  "total_yuan": 13948487.468843738,
+  "emergency_kwh": 94550.82897441105,
+  "unutilized_kwh": 2741423.0144766564,
+  "emergency_days": 131,
+  "seconds": 6.865595817565918
+}

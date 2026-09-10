@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "f5e1087ed3e4d264f23cda2f1fa680305386c05ba92fcf95c9da282fb5dababe",
+  "code_sha256": "ce950910d2f291cdf3dca4ce67eae6b158fbc71747761ccd23abfce4965a47da",
+  "input_sha256": "bfc5d046d5619df1b9e1c635fcbe20a554b21f6aba5391e62fe0a2a78d1e949b",
+  "q_candidates": [
+    0.0,
+    0.65,
+    0.8,
+    0.9
+  ],
+  "note": "Retrospective experiment after baseline year reviewed; not external blind test."
+}

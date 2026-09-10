@@ -1,0 +1,30 @@
+{
+  "authorization": "用户明确要求错的就不要了，删掉",
+  "scope": "local repository deliverable copies; no raw input or valid baseline data deleted",
+  "removed": [
+    {
+      "path": "paper/overleaf/main.pdf",
+      "reason": "失效旧PDF：含未解析引用及已替换的国外引文；以build/main.pdf及线上编译为准",
+      "sha256_before_delete": "15435ae7864be1c760e084a7f70e32b8fba2a515a0731834743ac50cd3893f34",
+      "bytes": 128006
+    },
+    {
+      "path": "paper/analysis/四问建模初稿.pdf",
+      "reason": "已被替代的v1整篇交付稿，未整合当前Q2推荐；保留正确的v1方法与审计数据",
+      "sha256_before_delete": "813a302febbb01a034150bb7385f8a59726ced6cfd9b3095bed1a04a9802da7d",
+      "bytes": 362547
+    },
+    {
+      "path": "results/submission/result2.xlsx",
+      "reason": "被bias_hourly_risk替代的旧交付表；保留正确的q2_margin基线数据",
+      "sha256_before_delete": "f9394c58a45a0206b88e26760c91a8b2665e8ea4a03c22019b5870a34f245f73",
+      "bytes": 610098
+    },
+    {
+      "path": "paper/releases/2026C-first-round/support.zip",
+      "reason": "包含已被替代旧result2的首轮交付包，避免误当当前支撑包",
+      "sha256_before_delete": "dfbfd9bde71414d692684cb0e73bcde4861354be0daaddf00f3f924c15c1160e",
+      "bytes": 10568940
+    }
+  ]
+}

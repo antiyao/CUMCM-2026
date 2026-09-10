@@ -1,0 +1,1 @@
+date,interval_index,interval_start,interval_end,load_kwh,pv_kwh,charge,discharge,soc_start,soc_end,emergency,unused,unused_pv,unused_purchased,price,plan_price,planned_grid,contract_grid,original_fee,increase_fee,decrease_penalty,refund,emergency_fee,total_fee,contract_increase,contract_decrease

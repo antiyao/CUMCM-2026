@@ -1,0 +1,43 @@
+{
+  "description": "Factorial baseline diagnosis only: no margin, identical local optimizer/battery, two forecast sources and two execution controls. Forecast sources are precomputed causally; not independent unseen-data validation.",
+  "results": {
+    "external_fixed_reference": {
+      "planned_yuan": 12189842.297348622,
+      "emergency_yuan": 2836588.9692404624,
+      "total_yuan": 15026431.266589085,
+      "emergency_kwh": 606848.8824861997,
+      "final_kwh": 5947.25808,
+      "unutilized_kwh": 1552325.5998721973
+    },
+    "external_fixed_greedy": {
+      "planned_yuan": 12207634.836764088,
+      "emergency_yuan": 3044741.45566938,
+      "total_yuan": 15252376.292433467,
+      "emergency_kwh": 498631.1123874412,
+      "final_kwh": 5811.055042962961,
+      "unutilized_kwh": 1462327.7750489162
+    },
+    "local_selected_reference": {
+      "planned_yuan": 12156081.910279268,
+      "emergency_yuan": 3031311.4162300006,
+      "total_yuan": 15187393.326509269,
+      "emergency_kwh": 658474.3965442177,
+      "final_kwh": 5929.37797631781,
+      "unutilized_kwh": 1545671.053306714
+    },
+    "local_selected_greedy": {
+      "planned_yuan": 12176731.636170147,
+      "emergency_yuan": 3240383.320502635,
+      "total_yuan": 15417114.956672782,
+      "emergency_kwh": 535342.9311965728,
+      "final_kwh": 5770.811204840824,
+      "unutilized_kwh": 1443999.051812782
+    }
+  },
+  "differences": {
+    "predictor_change_external_to_local_with_reference_yuan": 160962.0599201843,
+    "predictor_change_external_to_local_with_greedy_yuan": 164738.66423931532,
+    "controller_change_reference_to_greedy_with_external_yuan": 225945.02584438212,
+    "controller_change_reference_to_greedy_with_local_yuan": 229721.63016351312
+  }
+}

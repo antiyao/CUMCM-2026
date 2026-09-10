@@ -1,42 +1,41 @@
 # TODO
 
-## Priority
+更新日期：2026-09-10。当前为 C 题真实建模与正式论文写作阶段；结果入口和适用条件见 CURRENT_STATE.md。
 
-- [ ] Finish pre-competition collaboration setup.
-- [ ] Test Git synchronization with all team members.
-- [ ] Test shared Codex context workflow.
-- [x] Teammate Codex onboarding and shared-context read test succeeded.
+## 已完成
 
-## Historical Literature
+- [x] 导入并核验 3 页 C 题题面、11 份原件及全部配套数据/模板；建立迁移哈希、数据字典、质量审计、四问拆解、信息边界和结算规格。
+- [x] 求解 Q1 MILP，完成无储能/规则对照、同物理 LP 下界、独立物理检查和两种解释敏感性；导出并核验工作簿、图和实算报告。
+- [x] 完成 Q2–Q4 首轮 13 策略、334 天统一回测及独立账务/物理重算，保留 Q3 新预报当前用法未省费的负面结果。
+- [x] 完成五本首轮 Excel 的结构、日历、数值和目视检查，保存模板时间映射；输出仍有时间标签歧义，未认证最终提交。
+- [x] 审查并隔离复现外部 Q2 工程，完成偏差修正、小时保护、价格保留、动态选择、场景及执行一致 SAA 等迭代；保留未胜出结果及版本边界。
+- [x] 明确 Q2 最终推荐 bias_hourly_risk，费用 13,868,005.116996 元，统一入口 results/final_recommendation/result2.xlsx；保留首轮和 greedy 对照，不改写为一月事前选优或独立盲测。
+- [x] 在候选结束后计算同起末状态 ORACLE 下界，仅供不可实施诊断。
+- [x] 汇编四问说明、Q2 最终答案与迭代评估、主张证据映射、Q1/Q2 图、16 组指定日表、23 页首轮初稿及支撑包；它们尚未整合成正式论文。
+- [x] 按用户 LaTeX 模板建立分章工程；完成正式稿 1.1 问题背景、1.2 四问问题要求、1.3 图示流程图和 6 条模型假设。
+- [x] 压缩背景与流程文字，核验四条中国官方引用；在 Canva 实际保存参考神秘卷3小图示组织的设计，核验思源宋体和无位图矢量 PDF，保留本地 SVG 源。
+- [x] 将论文工程同步至 SJTU 项目 6aa27f6bbd92933f73a5ac15 并备份旧线上工程，后续单章同步假设；最近一次本地/在线 XeLaTeX / TeX Live 2025 编译均为 4 页。
+- [x] 原样归档整理前的两份状态文件，移除当前入口中的过时赛前状态和已被后续工作替代的写作状态。
 
-- [x] Acquire and audit the active 2015–2025 corpus.
-- [x] Approve the 32-paper core selection.
-- [x] Complete Batch 1 deep distillation for five papers.
-- [x] Review the Batch 1 calibration audit and approve schema v1.1 changes.
-- [x] Freeze workflow v1.1 and create the repository `cumcm-paper-distillation` Skill.
-- [x] Start Batch 2 after explicit human approval.
-- [x] Complete the 10 approved Batch 2 paper distillations and retain the batch audit in the local process archive.
-- [x] Pass the Batch 2 pre-flight gate and start the explicitly authorized Batch 3.
-- [x] Complete the 17 approved Batch 3 paper distillations and retain the batch audit in the local process archive.
-- [x] Create a machine-readable completion report for all 32 selected papers.
-- [x] Consolidate the final Git-shareable knowledge layer into compact metadata, INDEX, QUICK_REFERENCE, and 32 per-paper reports.
-- [x] Keep raw PDFs, OCR, acquisition evidence, and process audits local-only through `.gitignore`.
-- [x] Create the repository-scoped `cumcm-problem-solving` Skill with independent retrieval, audit, validation, and output references.
-- [x] Pass structural validation, Tests A-E, and the filtered 2020 B historical holdout without modifying real competition context.
-- [ ] Human-review the final literature structure, provenance table, retrieval layer, and B050 primary/companion boundary.
-- [ ] Human-review the new competition-time Skill and its weak-coverage retrieval rule.
-- [ ] Repair retired path references in `cumcm-paper-distillation` before any future historical distillation.
-- [ ] Stage, commit, and push only after explicit approval.
-- [ ] Build the final `COMPETITION_PLAYBOOK` only after the approved distillation batches.
+## 本次 Git 整理与发布
 
-## Competition Start
+- [x] 完成本次可复现性、数值/文字一致性与提交文件范围核验；保留队友修改、原件和数学有效的基线/审计证据，按用户要求移除错稿及易误用的过期交付副本。
+- [x] 将当前五本工作簿统一至 results/final_recommendation/，核验来源和哈希；Q2 使用 bias_hourly_risk，Q1/Q3/Q4 保持现有方案及其条件。
 
-- [ ] Import official problem statement.
-- [ ] Import provided data.
-- [ ] Update PROBLEM.md.
-- [ ] Perform initial problem analysis.
-- [ ] Decide problem selection.
+## 仍待完成
 
-## Later
+- [ ] 队员审阅问题背景、问题要求和 6 条假设；A001–A006 的效率、计量端口、区间平均功率、反馈控制、退款/多次调整、价格可见性仍为 Under Review。
+- [ ] 澄清官方模板的 10 分钟时间标签错位；在时间语义统一并完成提交审查前保留 submission_ready=false。
+- [ ] 按当前推荐结果逐节完成正式论文：摘要、符号说明、四问模型/求解/检验、模型评价、参考文献扩充及必要附录；区分 Q2 新推荐与首轮研究稿，保留 Q3/Q4 现有结果的适用条件。
+- [ ] 在模型评价中披露网损、自放电、老化、故障、外网购电容量和执行延迟未建模的边界；完善源码附录、支撑包及 AI 版本/人工修改记录，完成队员人工核验。
+- [ ] 补充逐 issue/lead 预报误差与校准、预报利用方式、严格观测延迟/区间内波动及终端策略敏感性；Q4 的冻结预报、电池-only 等对照尚未完整覆盖。
+- [ ] 按实际需要扩展价格已知条件对照、容量/功率/费率与效率敏感性、情景/CVaR、交互展示；未执行部分不得写为已完成。
+- [ ] 若要声称 Q2 在其他年份稳定受益，使用未参与开发的数据验证；不以该待研究问题否定当前附件已验证最低费用推荐。
+- [ ] 完成队员协作权限及章节编辑/源码备份同步演练，协调本地与 SJTU 在线稿的后续修改。
 
-No tasks yet.
+## 历史资料维护
+
+32/32 篇核心论文知识层、两个独立论文蒸馏/建模 Skill、历史验证记录均保留；日常检索使用 literature/synthesis/INDEX.md 和 QUICK_REFERENCE.md。赛前准备与历史清单见 context/archive/2026-09-10-before-git整理/TODO.md，不再将已完成的选题、题目/数据导入列为待办。
+
+- [ ] 后续确需历史维护时再审阅 B050 主文/伴随版本边界、知识层和 Skill 的既有待核项；未来重新蒸馏前修复旧路径引用，不在本次整理中重做全库审计。
+- [ ] 最终 COMPETITION_PLAYBOOK 尚未编写，是否需要另行确定。

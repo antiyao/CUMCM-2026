@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="72mm" viewBox="0 0 1600 720" role="img">
+  <title>微网四问总体研究流程（方法示意）</title>
+  <desc>仿照神秘卷3四栏图示组织。小图表示方法，不表示实际数值结果。</desc>
+  <rect x="0" y="0" width="1600" height="720" fill="white" />
+  <path id="study-sequence" d="M 12 118 L 1585 118" fill="none" stroke="#254e70" stroke-width="3" />
+  <polygon points="1585,118 1574.0,113.0 1574.0,123.0" fill="#254e70" />
+  <rect id="q1-panel" x="24" y="180" width="364" height="506" rx="24" fill="white" stroke="#254e70" stroke-width="2.2" />
+  <g id="q1-symbol" transform="translate(169,15) scale(0.4625,0.4666666666666667)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="39" cy="24" r="10" fill="#fff1d7" />
+    <path d="M39 7V3 M39 45V41 M22 24H17 M61 24H56 M26 11L22 7 M52 37L56 41 M52 11L56 7 M26 37L22 41" />
+    <path d="M88 50L116 29L145 50" fill="#eaf3f8" />
+    <rect x="94" y="50" width="44" height="48" rx="2" fill="#eaf3f8" />
+    <rect x="111" y="76" width="13" height="22" fill="#ffffff" />
+    <rect x="102" y="58" width="9" height="10" fill="#ffffff" />
+    <rect x="121" y="58" width="9" height="10" fill="#ffffff" />
+    <polygon points="20,54 75,54 87,84 11,84" fill="#d8eaf3" />
+    <path d="M15 73H82 M18 63H79 M35 54L30 84 M55 54L59 84" />
+    <path d="M30 85V98 M67 85V98 M24 98H73" />
+    <path d="M82 98H145" />
+    <path d="M85 63H92" />
+    <polygon points="88,59 93,63 88,67" fill="#254e70" stroke="none" />
+  </g>
+  <rect id="q1-header" x="36" y="84" width="340" height="76" rx="0" fill="white" stroke="#254e70" stroke-width="2" />
+  <text id="q1-number" x="206" y="112" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="28" text-anchor="middle">问题一</text>
+  <text id="q1-title" x="206" y="146" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="31" text-anchor="middle">确定性调度</text>
+  <rect id="q2-panel" x="420" y="180" width="364" height="506" rx="24" fill="white" stroke="#254e70" stroke-width="2.2" />
+  <g id="q2-symbol" transform="translate(565,15) scale(0.4625,0.4666666666666667)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="20" y="22" width="80" height="78" rx="5" fill="#eaf3f8" />
+    <path d="M20 43H100 M39 16V29 M80 16V29" />
+    <path d="M33 58H61 M33 72H68 M33 86H60" />
+    <path d="M75 57L79 61L86 52 M75 72L79 76L86 67" stroke="#487d5b" />
+    <path d="M118 44V60 M133 44V60" />
+    <path d="M110 60H141V68C141 79 134 85 125 85C117 85 110 79 110 68Z" fill="#fff1d7" />
+    <path d="M125 85V98H101" />
+    <polygon points="127,62 119,74 125,74 123,82 133,69 126,69" fill="#be925f" stroke="none" />
+    <path d="M101 98L105 94 M101 98L105 102" />
+  </g>
+  <rect id="q2-header" x="432" y="84" width="340" height="76" rx="0" fill="white" stroke="#254e70" stroke-width="2" />
+  <text id="q2-number" x="602" y="112" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="28" text-anchor="middle">问题二</text>
+  <text id="q2-title" x="602" y="146" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="31" text-anchor="middle">日前计划</text>
+  <rect id="q3-panel" x="816" y="180" width="364" height="506" rx="24" fill="white" stroke="#254e70" stroke-width="2.2" />
+  <g id="q3-symbol" transform="translate(961,15) scale(0.4625,0.4666666666666667)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="80" cy="61" r="38" fill="#eaf3f8" />
+    <path d="M80 31V39 M110 61H102 M80 91V83 M50 61H58" />
+    <path d="M80 61V43 M80 61L96 71" stroke-width="3.2" />
+    <circle cx="80" cy="61" r="3.2" fill="#254e70" stroke="none" />
+    <path d="M41 33C51 18 68 11 88 14" stroke="#487d5b" />
+    <polygon points="81,8 92,15 80,19" fill="#487d5b" stroke="none" />
+    <path d="M110 18C127 29 135 45 133 64" stroke="#487d5b" />
+    <polygon points="139,57 133,69 127,57" fill="#487d5b" stroke="none" />
+    <path d="M119 89C109 104 92 111 72 108" stroke="#487d5b" />
+    <polygon points="79,114 68,107 80,102" fill="#487d5b" stroke="none" />
+    <path d="M50 103C33 94 25 77 27 58" stroke="#487d5b" />
+    <polygon points="21,65 27,53 33,65" fill="#487d5b" stroke="none" />
+  </g>
+  <rect id="q3-header" x="828" y="84" width="340" height="76" rx="0" fill="white" stroke="#254e70" stroke-width="2" />
+  <text id="q3-number" x="998" y="112" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="28" text-anchor="middle">问题三</text>
+  <text id="q3-title" x="998" y="146" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="31" text-anchor="middle">日内调整</text>
+  <rect id="q4-panel" x="1212" y="180" width="364" height="506" rx="24" fill="white" stroke="#254e70" stroke-width="2.2" />
+  <g id="q4-symbol" transform="translate(1357,15) scale(0.4625,0.4666666666666667)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 21V80H78" />
+    <polyline points="23,61 32,55 41,64 50,39 59,47 70,28" stroke="#6292ad" stroke-width="3.2" />
+    <circle cx="47" cy="97" r="16" fill="#fff1d7" />
+    <path d="M40 89L47 96L54 89 M47 96V108 M40 98H54 M40 102H54" stroke-width="2.1" />
+    <rect x="91" y="21" width="53" height="82" rx="3" fill="#e5f1e9" />
+    <rect x="101" y="14" width="32" height="14" rx="3" fill="#ffffff" />
+    <path d="M101 42H134 M101 57H134 M101 72H134 M101 86H134 M118 42V86" />
+    <path d="M79 71H86" />
+    <polygon points="82,67 88,71 82,75" fill="#254e70" stroke="none" />
+    <path d="M101 95H111" stroke="#487d5b" stroke-width="3" />
+    <path d="M123 94L126 97L135 89" stroke="#487d5b" />
+  </g>
+  <rect id="q4-header" x="1224" y="84" width="340" height="76" rx="0" fill="white" stroke="#254e70" stroke-width="2" />
+  <text id="q4-number" x="1394" y="112" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="28" text-anchor="middle">问题四</text>
+  <text id="q4-title" x="1394" y="146" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="31" text-anchor="middle">电价扩展</text>
+  <g id="q1-energy" transform="translate(79,212) scale(1.53125,1.5333333333333334)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="39" cy="24" r="10" fill="#fff1d7" />
+    <path d="M39 7V3 M39 45V41 M22 24H17 M61 24H56 M26 11L22 7 M52 37L56 41 M52 11L56 7 M26 37L22 41" />
+    <path d="M88 50L116 29L145 50" fill="#eaf3f8" />
+    <rect x="94" y="50" width="44" height="48" rx="2" fill="#eaf3f8" />
+    <rect x="111" y="76" width="13" height="22" fill="#ffffff" />
+    <rect x="102" y="58" width="9" height="10" fill="#ffffff" />
+    <rect x="121" y="58" width="9" height="10" fill="#ffffff" />
+    <polygon points="20,54 75,54 87,84 11,84" fill="#d8eaf3" />
+    <path d="M15 73H82 M18 63H79 M35 54L30 84 M55 54L59 84" />
+    <path d="M30 85V98 M67 85V98 M24 98H73" />
+    <path d="M82 98H145" />
+    <path d="M85 63H92" />
+    <polygon points="88,59 93,63 88,67" fill="#254e70" stroke="none" />
+  </g>
+  <text id="q1-balance" x="206" y="424" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="29" text-anchor="middle">功率平衡</text>
+  <path id="q1-arrow" d="M 290 430 L 298 458 L 261 486" fill="none" stroke="#669ea6" stroke-width="3" />
+  <polygon points="261,486 272.7886835925532,483.3491625559707 266.7542568906978,475.37509869994756" fill="#669ea6" />
+  <rect id="q1-method-tag" x="48" y="440" width="152" height="45" rx="6" fill="#e9f2f8" stroke="#8ba6ba" stroke-width="1.4" />
+  <text id="q1-method" x="124" y="473" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="27" text-anchor="middle">整数规划</text>
+  <g id="q1-battery" transform="translate(103,498) scale(1.2875,1.2916666666666667)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="48" y="33" width="64" height="56" rx="7" fill="#e5f1e9" />
+    <rect x="112" y="48" width="7" height="25" rx="2" fill="#e5f1e9" />
+    <rect x="57" y="43" width="13" height="35" rx="2" fill="#b9d7c1" stroke="none" />
+    <rect x="76" y="43" width="13" height="35" rx="2" fill="#b9d7c1" stroke="none" />
+    <rect x="95" y="43" width="8" height="35" rx="2" fill="#b9d7c1" stroke="none" />
+    <path d="M35 44C39 16 108 10 129 34" />
+    <polygon points="119,33 130,35 127,24" fill="#254e70" stroke="none" />
+    <path d="M125 79C120 107 50 112 29 88" />
+    <polygon points="40,88 28,87 32,98" fill="#254e70" stroke="none" />
+    <path d="M22 52V71 M12 61H32" stroke="#487d5b" />
+    <path d="M131 61H148" stroke="#bf8345" />
+  </g>
+  <text id="q1-output" x="206" y="674" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="29" text-anchor="middle">储能调度</text>
+  <g id="q2-predict" transform="translate(478,214) scale(1.53125,1.5333333333333334)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 20V96H145" />
+    <path d="M29 83C42 81 43 56 58 51C76 47 70 28 91 32C113 33 121 77 141 79" stroke="#6292ad" stroke-width="3.2" />
+    <path d="M29 88C42 83 46 67 57 66C71 66 82 45 92 44C107 45 124 75 141 85" stroke="#be925f" stroke-width="3" stroke-dasharray="5 5" />
+    <path d="M77 63V43" stroke="#487d5b" />
+    <polygon points="73,48 77,40 81,48" fill="#487d5b" stroke="none" />
+    <path d="M104 68V55" stroke="#487d5b" />
+    <polygon points="100,60 104,52 108,60" fill="#487d5b" stroke="none" />
+    <circle cx="57" cy="66" r="3.1" fill="#ffffff" stroke="#be925f" />
+    <circle cx="92" cy="44" r="3.1" fill="#ffffff" stroke="#be925f" />
+    <path d="M22 23L18 29 M22 23L26 29 M143 96L137 92 M143 96L137 100" />
+  </g>
+  <text id="q2-correct" x="602" y="423" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="27" text-anchor="middle">偏差修正 · 误差保护</text>
+  <text id="q2-schematic" x="718" y="386" fill="#71828d" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="17" text-anchor="middle">示意</text>
+  <path id="q2-arrow" d="M 503 438 L 486 474 L 524 505" fill="none" stroke="#669ea6" stroke-width="3" />
+  <polygon points="524,505 518.6371184088683,494.17228089395087 512.3158511341504,501.9209311016697" fill="#669ea6" />
+  <g id="q2-execute" transform="translate(490,485) scale(1.40625,1.4083333333333334)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="20" y="22" width="80" height="78" rx="5" fill="#eaf3f8" />
+    <path d="M20 43H100 M39 16V29 M80 16V29" />
+    <path d="M33 58H61 M33 72H68 M33 86H60" />
+    <path d="M75 57L79 61L86 52 M75 72L79 76L86 67" stroke="#487d5b" />
+    <path d="M118 44V60 M133 44V60" />
+    <path d="M110 60H141V68C141 79 134 85 125 85C117 85 110 79 110 68Z" fill="#fff1d7" />
+    <path d="M125 85V98H101" />
+    <polygon points="127,62 119,74 125,74 123,82 133,69 126,69" fill="#be925f" stroke="none" />
+    <path d="M101 98L105 94 M101 98L105 102" />
+  </g>
+  <text id="q2-output" x="602" y="674" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="29" text-anchor="middle">计划与紧急补电</text>
+  <g id="q3-update" transform="translate(828,204) scale(1.0875,1.0916666666666666)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="80" cy="61" r="38" fill="#eaf3f8" />
+    <path d="M80 31V39 M110 61H102 M80 91V83 M50 61H58" />
+    <path d="M80 61V43 M80 61L96 71" stroke-width="3.2" />
+    <circle cx="80" cy="61" r="3.2" fill="#254e70" stroke="none" />
+    <path d="M41 33C51 18 68 11 88 14" stroke="#487d5b" />
+    <polygon points="81,8 92,15 80,19" fill="#487d5b" stroke="none" />
+    <path d="M110 18C127 29 135 45 133 64" stroke="#487d5b" />
+    <polygon points="139,57 133,69 127,57" fill="#487d5b" stroke="none" />
+    <path d="M119 89C109 104 92 111 72 108" stroke="#487d5b" />
+    <polygon points="79,114 68,107 80,102" fill="#487d5b" stroke="none" />
+    <path d="M50 103C33 94 25 77 27 58" stroke="#487d5b" />
+    <polygon points="21,65 27,53 33,65" fill="#487d5b" stroke="none" />
+  </g>
+  <text id="q3-update-label" x="916" y="362" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="26" text-anchor="middle">预报更新</text>
+  <text id="q3-times" x="916" y="388" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="22" text-anchor="middle">0 / 6 / 12 / 18</text>
+  <path id="q3-update-arrow" d="M 981 278 L 1036 316" fill="none" stroke="#669ea6" stroke-width="3" />
+  <polygon points="1036,316 1029.7921256307507,305.6335977400248 1024.1078069311973,313.86090112095746" fill="#669ea6" />
+  <g id="q3-contract" transform="translate(994,311) scale(1.0375,1.0416666666666667)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 20H57L70 33V94H19Z" fill="#eaf3f8" />
+    <path d="M57 20V33H70" />
+    <path d="M29 45H59 M29 55H53 M29 65H58" />
+    <path d="M31 83C35 74 39 91 43 80C46 75 48 87 54 82" stroke-width="1.8" />
+    <path d="M91 20H128L141 33V94H91Z" fill="#e5f1e9" />
+    <path d="M128 20V33H141" />
+    <path d="M101 45H129 M101 55H123 M101 65H128" />
+    <path d="M103 83C107 74 111 91 115 80C118 75 120 87 126 82" stroke-width="1.8" />
+    <circle cx="68" cy="96" r="14" fill="#ffffff" stroke="#487d5b" />
+    <path d="M61 96H75 M68 89V103" stroke="#487d5b" />
+    <circle cx="140" cy="96" r="14" fill="#ffffff" stroke="#be925f" />
+    <path d="M133 96H147" stroke="#be925f" />
+  </g>
+  <text id="q3-adjust-label" x="1077" y="465" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="26" text-anchor="middle">滚动调整</text>
+  <path id="q3-cost-arrow" d="M 1062 479 L 1039 512" fill="none" stroke="#669ea6" stroke-width="3" />
+  <polygon points="1039,512 1049.3917101124198,505.834583473971 1041.18772844472,500.11665685708925" fill="#669ea6" />
+  <g id="q3-cost" transform="translate(896,480) scale(1.275,1.275)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 27V98 M65 99H95 M52 107H108" />
+    <path d="M27 41L80 29L133 41" />
+    <circle cx="80" cy="27" r="5" fill="#d8eaf3" />
+    <path d="M27 42L12 74 M27 42L42 74 M133 42L118 74 M133 42L148 74" />
+    <path d="M10 74H44C42 87 14 87 10 74Z" fill="#eaf3f8" />
+    <path d="M116 74H150C148 87 120 87 116 74Z" fill="#e5f1e9" />
+    <circle cx="26" cy="64" r="9" fill="#fff1d7" />
+    <path d="M22 59L26 64L30 59 M26 64V70 M22 65H30 M22 68H30" stroke-width="1.6" />
+    <circle cx="132" cy="64" r="9" fill="#fff1d7" />
+    <path d="M128 59L132 64L136 59 M132 64V70 M128 65H136 M128 68H136" stroke-width="1.6" />
+  </g>
+  <text id="q3-output" x="998" y="674" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="29" text-anchor="middle">预报与调整价值</text>
+  <g id="q4-predict" transform="translate(1282,212) scale(1.425,1.425)" fill="none" stroke="#254e70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 21V80H78" />
+    <polyline points="23,61 32,55 41,64 50,39 59,47 70,28" stroke="#6292ad" stroke-width="3.2" />
+    <circle cx="47" cy="97" r="16" fill="#fff1d7" />
+    <path d="M40 89L47 96L54 89 M47 96V108 M40 98H54 M40 102H54" stroke-width="2.1" />
+    <rect x="91" y="21" width="53" height="82" rx="3" fill="#e5f1e9" />
+    <rect x="101" y="14" width="32" height="14" rx="3" fill="#ffffff" />
+    <path d="M101 42H134 M101 57H134 M101 72H134 M101 86H134 M118 42V86" />
+    <path d="M79 71H86" />
+    <polygon points="82,67 88,71 82,75" fill="#254e70" stroke="none" />
+    <path d="M101 95H111" stroke="#487d5b" stroke-width="3" />
+    <path d="M123 94L126 97L135 89" stroke="#487d5b" />
+  </g>
+  <text id="q4-price-label" x="1394" y="415" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="29" text-anchor="middle">电价预测</text>
+  <text id="q4-assumption" x="1394" y="445" fill="#71828d" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="22" text-anchor="middle">未来价未知（暂定）</text>
+  <path id="q4-branch-left" d="M 1394 459 L 1394 481 L 1314 481 L 1314 506" fill="none" stroke="#669ea6" stroke-width="3" />
+  <polygon points="1314,506 1319.0,495.0 1309.0,495.0" fill="#669ea6" />
+  <path id="q4-branch-right" d="M 1394 481 L 1479 481 L 1479 506" fill="none" stroke="#669ea6" stroke-width="3" />
+  <polygon points="1479,506 1484.0,495.0 1474.0,495.0" fill="#669ea6" />
+  <rect id="q4-plan0" x="1268" y="512" width="92" height="91" rx="5" fill="#f3f7fa" stroke="#6e8fa6" stroke-width="2" />
+  <line x1="1284" y1="535" x2="1344" y2="535" stroke="#8ba6ba" stroke-width="3" />
+  <line x1="1284" y1="553" x2="1344" y2="553" stroke="#8ba6ba" stroke-width="3" />
+  <line x1="1284" y1="571" x2="1344" y2="571" stroke="#8ba6ba" stroke-width="3" />
+  <text id="q4-plan-label0" x="1314" y="633" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="26" text-anchor="middle">日前</text>
+  <rect id="q4-plan1" x="1433" y="512" width="92" height="91" rx="5" fill="#f3f7fa" stroke="#6e8fa6" stroke-width="2" />
+  <line x1="1449" y1="535" x2="1509" y2="535" stroke="#8ba6ba" stroke-width="3" />
+  <line x1="1449" y1="553" x2="1509" y2="553" stroke="#8ba6ba" stroke-width="3" />
+  <line x1="1449" y1="571" x2="1509" y2="571" stroke="#8ba6ba" stroke-width="3" />
+  <text id="q4-plan-label1" x="1479" y="633" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="26" text-anchor="middle">日内</text>
+  <text id="q4-output" x="1394" y="674" fill="#254e70" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="26" text-anchor="middle">两类重算 · 实际价结算</text>
+  <text id="schematic-label" x="1495" y="713" fill="#71828d" font-family="STSong, SimSun, Noto Serif SC, serif" font-size="16" text-anchor="middle">方法示意</text>
+</svg>

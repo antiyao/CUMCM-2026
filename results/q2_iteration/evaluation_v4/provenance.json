@@ -1,0 +1,11 @@
+{
+  "source_runs": [
+    "results/q2_iteration/policy_annual_v4",
+    "results/q2_iteration/annual_final_v3",
+    "results/q2_iteration/adaptive_annual_v3"
+  ],
+  "report": "paper/analysis/\u7b2c\u4e8c\u95ee\u8fed\u4ee3\u8bc4\u4f30.md",
+  "report_sha256": "21b67f024499ccc5fbf35e7ba8fd4523a7493d3954f954ff67a49828d0fcd2a8",
+  "best_observed": "bias_hourly_risk",
+  "january_selected_family": "price_reserve"
+}

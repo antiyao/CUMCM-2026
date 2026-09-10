@@ -1,0 +1,6 @@
+baseline,comparison,saving_total_yuan,cheaper_days,dearer_days,mean_daily_saving_yuan,block7_resample_95_low,block7_resample_95_high,block_days,repeats,seed,caveat
+q2_point,q2_margin,1131145.0750948368,220,107,3386.6619014815474,2306.035202370501,4845.1133824093295,7,2000,2026,"Descriptive moving-block resampling on one seasonal year, not an out-of-year guarantee or causal information value"
+q3_frozen_update,q3_battery_update,-589835.3366921507,79,180,-1765.974061952547,-2243.9655634988767,-1385.867291804785,7,2000,2026,"Descriptive moving-block resampling on one seasonal year, not an out-of-year guarantee or causal information value"
+q3_battery_update,q3_adjust_A,507689.80296878633,191,115,1520.0293502059471,1220.0112845562373,1916.4005906353282,7,2000,2026,"Descriptive moving-block resampling on one seasonal year, not an out-of-year guarantee or causal information value"
+q3_midnight,q3_adjust_A,-80090.74287748408,113,210,-239.79264334576072,-554.9528879773063,72.04456223625886,7,2000,2026,"Descriptive moving-block resampling on one seasonal year, not an out-of-year guarantee or causal information value"
+q3_adjust_A,q3_adjust_B,170086.15792375512,249,83,509.23999378369797,394.145946869251,615.9829065612541,7,2000,2026,"Descriptive moving-block resampling on one seasonal year, not an out-of-year guarantee or causal information value"

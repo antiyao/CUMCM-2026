@@ -1,0 +1,17 @@
+src/*.py text eol=lf
+src/*.mjs text eol=lf
+tests/*.py text eol=lf
+configs/* text eol=lf
+
+# Preserve verified input/output bytes and source archive fingerprints.
+data/** -text
+results/** -text
+*.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol
+*.xlsx -text
+*.pdf -text
+*.png -text
+*.svg -text -whitespace
+paper/template-original/** -text -whitespace
+paper/**/cumcmthesis.cls -text -whitespace
+paper/**/cumcm2026.sty -text -whitespace
+results/audit/official_rules/** -text -whitespace

@@ -1,0 +1,83 @@
+{
+  "q3_adjust_A": {
+    "cost_yuan": 344853.05010265106,
+    "initial": 6000.0,
+    "final": 6215.724730962228,
+    "emergency": 668.8868686994241,
+    "increases": 2394.8525078325433,
+    "decreases": 0.0,
+    "decisions": 28
+  },
+  "q3_adjust_B": {
+    "cost_yuan": 338962.7534473805,
+    "initial": 6000.0,
+    "final": 6157.278815374627,
+    "emergency": 1358.646859922693,
+    "increases": 3012.751381952035,
+    "decreases": 28688.769648683312,
+    "decisions": 28
+  },
+  "q3_battery_update": {
+    "cost_yuan": 342626.62193585956,
+    "initial": 6000.0,
+    "final": 6215.724730962228,
+    "emergency": 702.1750928884317,
+    "increases": 0.0,
+    "decreases": 0.0,
+    "decisions": 28
+  },
+  "q3_frozen_update": {
+    "cost_yuan": 342890.3193442468,
+    "initial": 6000.0,
+    "final": 6215.724730962228,
+    "emergency": 763.7434928701513,
+    "increases": 0.0,
+    "decreases": 0.0,
+    "decisions": 28
+  },
+  "q3_midnight": {
+    "cost_yuan": 342631.4107104328,
+    "initial": 6000.0,
+    "final": 6170.973630332436,
+    "emergency": 723.467502303339,
+    "increases": 0.0,
+    "decreases": 0.0,
+    "decisions": 7
+  },
+  "q3_selective_A": {
+    "cost_yuan": 344303.68864490313,
+    "initial": 6000.0,
+    "final": 6215.724730962228,
+    "emergency": 687.1156995412092,
+    "increases": 1919.5444312222203,
+    "decreases": 0.0,
+    "decisions": 28
+  },
+  "q4_2_margin": {
+    "cost_yuan": 356937.63453744707,
+    "initial": 6000.0,
+    "final": 6456.702383327654,
+    "emergency": 1188.3699361130855,
+    "increases": 0.0,
+    "decreases": 0.0,
+    "decisions": 7
+  },
+  "q4_3_adjust_A": {
+    "cost_yuan": 374528.33686161187,
+    "initial": 6000.0,
+    "final": 6165.811688019878,
+    "emergency": 967.9095962539398,
+    "increases": 2314.191554524448,
+    "decreases": 0.0,
+    "decisions": 28
+  },
+  "q4_3_adjust_B": {
+    "cost_yuan": 368050.0842766432,
+    "initial": 6000.0,
+    "final": 6107.365772432277,
+    "emergency": 1670.841011513437,
+    "increases": 2932.0904286439413,
+    "decreases": 27716.582992313353,
+    "decisions": 28
+  }
+}

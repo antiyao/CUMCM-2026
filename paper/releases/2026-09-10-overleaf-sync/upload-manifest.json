@@ -1,0 +1,110 @@
+{
+  "target_project": "6aa27f6bbd92933f73a5ac15",
+  "backup_project": "6aa2f413bd92933f73a7e404",
+  "file_count": 23,
+  "files": {
+    "README.md": {
+      "bytes": 650,
+      "sha256": "70fb1b8a85762c283300718a2081d88e3e53ab53761c809dae9ac9afb1163f7e"
+    },
+    "cumcm2026.sty": {
+      "bytes": 3079,
+      "sha256": "5e69cc102eacd75543887ba23424d9a2a4744b223ca0ae2013d752b1ee41c951"
+    },
+    "cumcmthesis.cls": {
+      "bytes": 25706,
+      "sha256": "3d329326a55860990434fbc90516de16fdadc2282413f82b33b7b57079f3f91e"
+    },
+    "figures/README.md": {
+      "bytes": 143,
+      "sha256": "c5626e82c3fd374ec91ae9ab511b9cbfd84f4009e6ca664dc1f3c488c4e425b7"
+    },
+    "figures/总体流程图.drawio": {
+      "bytes": 16758,
+      "sha256": "132c426fc8d0fc650554623e3ea30619d25d12d33f5166b8b1ea8f16e5066e8a"
+    },
+    "figures/总体流程图.pdf": {
+      "bytes": 32072,
+      "sha256": "134b00aaad85a31539338744182a3caf5500150504fe97e443afcb37d5552f2f"
+    },
+    "figures/总体流程图.svg": {
+      "bytes": 9617,
+      "sha256": "7aeac4271bfd5b340f99b5e46655c5d8af6a5e383d616d545bc4e854eb92670e"
+    },
+    "figures/总体流程图_图示版.pdf": {
+      "bytes": 75624,
+      "sha256": "a283b1263187931e39a6fa562041f45b5f8afc4769bedbbfc2f2e3e674a827d9"
+    },
+    "figures/总体流程图_图示版.svg": {
+      "bytes": 18239,
+      "sha256": "5e8054b2d622f55c7e7594554fb8ea89a626fb375bd5c543860e5689803a3346"
+    },
+    "main.pdf": {
+      "bytes": 128006,
+      "sha256": "15435ae7864be1c760e084a7f70e32b8fba2a515a0731834743ac50cd3893f34"
+    },
+    "main.tex": {
+      "bytes": 596,
+      "sha256": "387706bc71539ee63906c4173013515c13f65f37b19ebedd2aba906bf997589e"
+    },
+    "sections/00_abstract.tex": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sections/01_problem.tex": {
+      "bytes": 3054,
+      "sha256": "d863b95e8641e8175b4934ceef1b72736bb95f768b0bc30bd8ee04dafe2e605e"
+    },
+    "sections/02_analysis.tex": {
+      "bytes": 93,
+      "sha256": "2421fa9ab2f1d47ac98e0bd0a6a007587a88d96a4f3d3045e1ec8b744d51024d"
+    },
+    "sections/03_assumptions.tex": {
+      "bytes": 26,
+      "sha256": "6158d279244ddf16a56a89de820a5edfb1b08823df18cec1e85703aa2cb37f8a"
+    },
+    "sections/04_notation.tex": {
+      "bytes": 172,
+      "sha256": "6fb9a8975ad9f2167bb6cdd5a626c8f6939a92133f50bc987aea3c528b7db52f"
+    },
+    "sections/05_model.tex": {
+      "bytes": 17,
+      "sha256": "cb53ef6190e294782a21e5ba26870bdbd9ef1a2671c3b584c7ddc81b2b99bd46"
+    },
+    "sections/06_validation.tex": {
+      "bytes": 114,
+      "sha256": "ae09304ab22b9f93e85e4fc9010f18f577e126bddeabf106da6de5fc7f586aaf"
+    },
+    "sections/07_conclusion.tex": {
+      "bytes": 26,
+      "sha256": "fbb77e0d2347ff63249732468c244a73671ecc22a11fd144d24529e11a06898b"
+    },
+    "sections/08_ai_statement.tex": {
+      "bytes": 159,
+      "sha256": "77bcc061a061b3aab19be097efa02a9393838df611baf323ef2510c657bad51b"
+    },
+    "sections/09_references.tex": {
+      "bytes": 1082,
+      "sha256": "9d77d33e2fd75396b2313d33b0a5de4ebaf308ed33abe4a26b744f4ca688cead"
+    },
+    "sections/10_appendix.tex": {
+      "bytes": 23,
+      "sha256": "196ea446739d60d8f5cc51b5b69483a1196cca4c4b877f7116fc970fbcd3cd51"
+    },
+    "tables/README.md": {
+      "bytes": 117,
+      "sha256": "12708ea24d03a81b32d5c19b9e80697286aeb1b51627dc6c7287cd7c034f0a31"
+    }
+  },
+  "status": "uploaded_and_online_compiled",
+  "compiler": "XeLaTeX",
+  "tex_live": "2025",
+  "main_document": "main.tex",
+  "online_page_count": 4,
+  "online_compile_errors": 0,
+  "online_warning_count": 7,
+  "verification": "All 23 upload items completed; file tree and rendered background/references/flowchart checked. No post-upload ZIP hash roundtrip was performed.",
+  "backup_url": "https://latex.sjtu.edu.cn/project/6aa2f413bd92933f73a7e404",
+  "existing_online_only_files_preserved": true,
+  "root_main_pdf": "Original local snapshot retained byte-for-byte; current PDF is the online compile preview"
+}

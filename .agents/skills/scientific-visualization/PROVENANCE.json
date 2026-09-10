@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "commit_sha": "9cf7d9aea7d84754db4c167ab04b299d33c444bc",
+  "upstream_path": "skills/scientific-visualization",
+  "upstream_version": "1.2",
+  "code_license": "MIT (repository LICENSE.md; library licensing is separate)",
+  "installed_utc": "2026-09-10T14:18:03.656018+00:00",
+  "upstream_snapshot": "results/audit/external_skills/9cf7d9aea7d84754db4c167ab04b299d33c444bc",
+  "local_modifications": [
+    "Added project-scoped local execution and figure integrity boundaries after frontmatter.",
+    "Removed upstream automatic paper-citation instruction; unchanged upstream source retained in isolated audit directory.",
+    "Clarified frontmatter: MIT applies to this skill; current project runtime is authoritative over upstream compatibility pins."
+  ],
+  "upstream_skill_sha256": "f7c7f9a2350ea02db2db55cd28921a54c74b089f6762f1b0b63a13b8f6eeec33",
+  "installed_skill_sha256": "96b6baf553c06904fbb0fa4db2c32a2b3c44fa1760ae2835d86c33f28c7a0f55",
+  "files": [
+    "LICENSE.md",
+    "SKILL.md",
+    "assets/color_palettes.py",
+    "assets/nature.mplstyle",
+    "assets/presentation.mplstyle",
+    "assets/publication.mplstyle",
+    "assets/publisher_profiles.json",
+    "references/color_palettes.md",
+    "references/journal_requirements.md",
+    "references/matplotlib_examples.md",
+    "references/publication_guidelines.md",
+    "references/sources.md",
+    "scripts/_common.py",
+    "scripts/export_plan.py",
+    "scripts/figure_export.py",
+    "scripts/image_metadata.py",
+    "scripts/palette_audit.py",
+    "scripts/style_presets.py",
+    "scripts/style_preview.py"
+  ]
+}

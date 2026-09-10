@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="100mm" viewBox="0 0 1600 1000" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">本文总体研究流程图</title>
+  <desc id="diagram-description">共同数据和物理约束分流至四问：确定性调度、历史信息决策、日内滚动调整、波动电价扩展，最终汇总开展检验。四列为问题分工，不表示第二问最终策略已直接用于第三、四问。</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#657B8A" />
+    </marker>
+  </defs>
+  <rect width="1600" height="1000" fill="#FFFFFF" />
+  <g id="shared-input">
+    <rect x="28" y="18" width="1544" height="132" rx="14" fill="#F1F5F8" stroke="#61798B" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="31" fill="#233747" text-anchor="middle">
+      <tspan x="800.0" y="72.375">数据准备与统一约束</tspan>
+      <tspan x="800.0" y="117.32499999999999">电价、负载、光伏与预报数据核验 · 时段与单位统一 · 功率平衡与储能约束</tspan>
+    </text>
+  </g>
+  <g id="q1-panel">
+    <rect x="28" y="208" width="356" height="600" rx="20" fill="#EFF5F9" stroke="#305E7B" stroke-width="2.5" />
+  </g>
+  <g id="q1-title">
+    <rect x="40" y="222" width="332" height="100" rx="14" fill="#305E7B" stroke="#305E7B" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="35" fill="#FFFFFF" text-anchor="middle">
+      <tspan x="206.0" y="258.875">问题一</tspan>
+      <tspan x="206.0" y="309.625">确定性调度</tspan>
+    </text>
+  </g>
+  <g id="q1-step1">
+    <rect x="46" y="355" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#305E7B" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="206.0" y="399.25">给定负载与光伏预测</tspan>
+      <tspan x="206.0" y="442.75">固定电价与储能参数</tspan>
+    </text>
+  </g>
+  <g id="q1-step2">
+    <rect x="46" y="503" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#305E7B" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="206.0" y="547.25">混合整数线性规划</tspan>
+      <tspan x="206.0" y="590.75">购电与充放电联合优化</tspan>
+    </text>
+  </g>
+  <g id="q1-step3">
+    <rect x="46" y="651" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#305E7B" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="206.0" y="695.25">购电与储能调度方案</tspan>
+      <tspan x="206.0" y="738.75">日首尾储电量相等</tspan>
+    </text>
+  </g>
+  <g id="q2-panel">
+    <rect x="424" y="208" width="356" height="600" rx="20" fill="#F0F7F5" stroke="#2F7169" stroke-width="2.5" />
+  </g>
+  <g id="q2-title">
+    <rect x="436" y="222" width="332" height="100" rx="14" fill="#2F7169" stroke="#2F7169" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="35" fill="#FFFFFF" text-anchor="middle">
+      <tspan x="602.0" y="258.875">问题二</tspan>
+      <tspan x="602.0" y="309.625">历史信息决策</tspan>
+    </text>
+  </g>
+  <g id="q2-step1">
+    <rect x="442" y="355" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#2F7169" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="602.0" y="399.25">历史预测与偏差修正</tspan>
+      <tspan x="602.0" y="442.75">同小时误差分位保护</tspan>
+    </text>
+  </g>
+  <g id="q2-step2">
+    <rect x="442" y="503" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#2F7169" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="602.0" y="547.25">零点制定购电计划</tspan>
+      <tspan x="602.0" y="590.75">日内贪心储能控制</tspan>
+    </text>
+  </g>
+  <g id="q2-step3">
+    <rect x="442" y="651" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#2F7169" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="602.0" y="695.25">紧急补电与费用核算</tspan>
+      <tspan x="602.0" y="738.75">当前数据策略比较</tspan>
+    </text>
+  </g>
+  <g id="q3-panel">
+    <rect x="820" y="208" width="356" height="600" rx="20" fill="#FAF6EF" stroke="#8B6231" stroke-width="2.5" />
+  </g>
+  <g id="q3-title">
+    <rect x="832" y="222" width="332" height="100" rx="14" fill="#8B6231" stroke="#8B6231" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="35" fill="#FFFFFF" text-anchor="middle">
+      <tspan x="998.0" y="258.875">问题三</tspan>
+      <tspan x="998.0" y="309.625">日内滚动调整</tspan>
+    </text>
+  </g>
+  <g id="q3-step1">
+    <rect x="838" y="355" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#8B6231" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="998.0" y="399.25">分时光伏预报更新</tspan>
+      <tspan x="998.0" y="442.75">零点计划与日内重规划</tspan>
+    </text>
+  </g>
+  <g id="q3-step2">
+    <rect x="838" y="503" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#8B6231" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="998.0" y="547.25">计入增减购电费用</tspan>
+      <tspan x="998.0" y="590.75">合同账本与储能执行</tspan>
+    </text>
+  </g>
+  <g id="q3-step3">
+    <rect x="838" y="651" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#8B6231" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="998.0" y="695.25">对照不同预报用法</tspan>
+      <tspan x="998.0" y="738.75">评估预报和调整价值</tspan>
+    </text>
+  </g>
+  <g id="q4-panel">
+    <rect x="1216" y="208" width="356" height="600" rx="20" fill="#F5F3F8" stroke="#665A83" stroke-width="2.5" />
+  </g>
+  <g id="q4-title">
+    <rect x="1228" y="222" width="332" height="100" rx="14" fill="#665A83" stroke="#665A83" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="35" fill="#FFFFFF" text-anchor="middle">
+      <tspan x="1394.0" y="258.875">问题四</tspan>
+      <tspan x="1394.0" y="309.625">波动电价扩展</tspan>
+    </text>
+  </g>
+  <g id="q4-step1">
+    <rect x="1234" y="355" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#665A83" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="1394.0" y="399.25">历史电价预测</tspan>
+      <tspan x="1394.0" y="442.75">未来电价未知（暂定）</tspan>
+    </text>
+  </g>
+  <g id="q4-step2">
+    <rect x="1234" y="503" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#665A83" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="1394.0" y="547.25">分别重算第二、三问</tspan>
+      <tspan x="1394.0" y="590.75">日前计划与日内调整</tspan>
+    </text>
+  </g>
+  <g id="q4-step3">
+    <rect x="1234" y="651" width="320" height="111" rx="14" fill="#FFFFFF" stroke="#665A83" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" fill="#233747" text-anchor="middle">
+      <tspan x="1394.0" y="695.25">按实际电价结算</tspan>
+      <tspan x="1394.0" y="738.75">比较费用与紧急购电</tspan>
+    </text>
+  </g>
+  <g id="shared-review">
+    <rect x="28" y="884" width="1544" height="98" rx="14" fill="#F1F5F8" stroke="#61798B" stroke-width="2.5" />
+    <text font-family="Arial Unicode MS, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="31" fill="#233747" text-anchor="middle">
+      <tspan x="800.0" y="921.375">统一检验与结果汇总</tspan>
+      <tspan x="800.0" y="966.325">物理约束与信息时序核验 · 费用逐项对账 · 基线比较与全期回测</tspan>
+    </text>
+  </g>
+  <g id="connectors" fill="none" stroke="#657B8A" stroke-width="2.7">
+    <path id="q1-arrow1" d="M 206 472 L 206 496" marker-end="url(#arrowhead)" />
+    <path id="q1-arrow2" d="M 206 620 L 206 644" marker-end="url(#arrowhead)" />
+    <path id="input-to-q1" d="M 206 177 L 206 200" marker-end="url(#arrowhead)" />
+    <path id="q1-to-review" d="M 206 815 L 206 847" />
+    <path id="q2-arrow1" d="M 602 472 L 602 496" marker-end="url(#arrowhead)" />
+    <path id="q2-arrow2" d="M 602 620 L 602 644" marker-end="url(#arrowhead)" />
+    <path id="input-to-q2" d="M 602 177 L 602 200" marker-end="url(#arrowhead)" />
+    <path id="q2-to-review" d="M 602 815 L 602 847" />
+    <path id="q3-arrow1" d="M 998 472 L 998 496" marker-end="url(#arrowhead)" />
+    <path id="q3-arrow2" d="M 998 620 L 998 644" marker-end="url(#arrowhead)" />
+    <path id="input-to-q3" d="M 998 177 L 998 200" marker-end="url(#arrowhead)" />
+    <path id="q3-to-review" d="M 998 815 L 998 847" />
+    <path id="q4-arrow1" d="M 1394 472 L 1394 496" marker-end="url(#arrowhead)" />
+    <path id="q4-arrow2" d="M 1394 620 L 1394 644" marker-end="url(#arrowhead)" />
+    <path id="input-to-q4" d="M 1394 177 L 1394 200" marker-end="url(#arrowhead)" />
+    <path id="q4-to-review" d="M 1394 815 L 1394 847" />
+    <path id="input-trunk" d="M 800 150 L 800 177" />
+    <path id="input-distribution" d="M 206 177 L 1394 177" />
+    <path id="review-collection" d="M 206 847 L 1394 847" />
+    <path id="review-trunk" d="M 800 847 L 800 875" marker-end="url(#arrowhead)" />
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="workflow" name="总体流程图">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="shared-input" value="数据校验 · 时标统一 · 约束定义" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#F1F5F8;strokeColor=#61798B;strokeWidth=2.5;fontColor=#233747;fontSize=31;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="28" y="18" width="1544" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-panel" value="" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#EFF5F9;strokeColor=#305E7B;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="28" y="208" width="356" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-title" value="问题一&#10;确定性调度" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#305E7B;strokeColor=#305E7B;strokeWidth=2.5;fontColor=#FFFFFF;fontSize=35;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q1-panel">
+          <mxGeometry x="12" y="14" width="332" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-step1" value="负载与光伏预测" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#305E7B;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q1-panel">
+          <mxGeometry x="18" y="147" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-step2" value="混合整数线性规划" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#305E7B;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q1-panel">
+          <mxGeometry x="18" y="295" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-step3" value="购电与储能调度" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#305E7B;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q1-panel">
+          <mxGeometry x="18" y="443" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-panel" value="" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#F0F7F5;strokeColor=#2F7169;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="424" y="208" width="356" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-title" value="问题二&#10;历史信息决策" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#2F7169;strokeColor=#2F7169;strokeWidth=2.5;fontColor=#FFFFFF;fontSize=35;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q2-panel">
+          <mxGeometry x="12" y="14" width="332" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-step1" value="偏差修正&#10;误差分位保护" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#2F7169;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q2-panel">
+          <mxGeometry x="18" y="147" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-step2" value="零点购电计划&#10;日内贪心控制" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#2F7169;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q2-panel">
+          <mxGeometry x="18" y="295" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-step3" value="费用与补电比较" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#2F7169;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q2-panel">
+          <mxGeometry x="18" y="443" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-panel" value="" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FAF6EF;strokeColor=#8B6231;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="208" width="356" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-title" value="问题三&#10;日内滚动调整" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#8B6231;strokeColor=#8B6231;strokeWidth=2.5;fontColor=#FFFFFF;fontSize=35;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q3-panel">
+          <mxGeometry x="12" y="14" width="332" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-step1" value="光伏预报更新" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#8B6231;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q3-panel">
+          <mxGeometry x="18" y="147" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-step2" value="滚动规划&#10;购电增减计费" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#8B6231;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q3-panel">
+          <mxGeometry x="18" y="295" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-step3" value="预报与调整评估" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#8B6231;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q3-panel">
+          <mxGeometry x="18" y="443" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-panel" value="" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#F5F3F8;strokeColor=#665A83;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1216" y="208" width="356" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-title" value="问题四&#10;波动电价扩展" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#665A83;strokeColor=#665A83;strokeWidth=2.5;fontColor=#FFFFFF;fontSize=35;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q4-panel">
+          <mxGeometry x="12" y="14" width="332" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-step1" value="历史电价预测&#10;未来价未知（暂定）" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#665A83;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q4-panel">
+          <mxGeometry x="18" y="147" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-step2" value="重算第二、三问" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#665A83;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q4-panel">
+          <mxGeometry x="18" y="295" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-step3" value="实际电价结算&#10;费用与补电比较" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#665A83;strokeWidth=2.5;fontColor=#233747;fontSize=30;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="q4-panel">
+          <mxGeometry x="18" y="443" width="320" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="shared-review" value="约束检验 · 信息核验 · 费用对账 · 回测比较" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#F1F5F8;strokeColor=#61798B;strokeWidth=2.5;fontColor=#233747;fontSize=31;fontFamily=STSong;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="28" y="884" width="1544" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-arrow1" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q1-step1" target="q1-step2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="472" as="sourcePoint" />
+            <mxPoint x="206" y="496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q1-arrow2" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q1-step2" target="q1-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="620" as="sourcePoint" />
+            <mxPoint x="206" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="input-to-q1" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;entryX=0.5;entryY=0;" edge="1" parent="1" target="q1-title">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="177" as="sourcePoint" />
+            <mxPoint x="206" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q1-to-review" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;" edge="1" parent="1" source="q1-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="815" as="sourcePoint" />
+            <mxPoint x="206" y="847" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q2-arrow1" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q2-step1" target="q2-step2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602" y="472" as="sourcePoint" />
+            <mxPoint x="602" y="496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q2-arrow2" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q2-step2" target="q2-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602" y="620" as="sourcePoint" />
+            <mxPoint x="602" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="input-to-q2" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;entryX=0.5;entryY=0;" edge="1" parent="1" target="q2-title">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602" y="177" as="sourcePoint" />
+            <mxPoint x="602" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q2-to-review" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;" edge="1" parent="1" source="q2-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602" y="815" as="sourcePoint" />
+            <mxPoint x="602" y="847" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q3-arrow1" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q3-step1" target="q3-step2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="998" y="472" as="sourcePoint" />
+            <mxPoint x="998" y="496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q3-arrow2" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q3-step2" target="q3-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="998" y="620" as="sourcePoint" />
+            <mxPoint x="998" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="input-to-q3" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;entryX=0.5;entryY=0;" edge="1" parent="1" target="q3-title">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="998" y="177" as="sourcePoint" />
+            <mxPoint x="998" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q3-to-review" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;" edge="1" parent="1" source="q3-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="998" y="815" as="sourcePoint" />
+            <mxPoint x="998" y="847" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q4-arrow1" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q4-step1" target="q4-step2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1394" y="472" as="sourcePoint" />
+            <mxPoint x="1394" y="496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q4-arrow2" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="q4-step2" target="q4-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1394" y="620" as="sourcePoint" />
+            <mxPoint x="1394" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="input-to-q4" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;entryX=0.5;entryY=0;" edge="1" parent="1" target="q4-title">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1394" y="177" as="sourcePoint" />
+            <mxPoint x="1394" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q4-to-review" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;exitX=0.5;exitY=1;" edge="1" parent="1" source="q4-step3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1394" y="815" as="sourcePoint" />
+            <mxPoint x="1394" y="847" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="input-trunk" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="150" as="sourcePoint" />
+            <mxPoint x="800" y="177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="input-distribution" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="177" as="sourcePoint" />
+            <mxPoint x="1394" y="177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="review-collection" style="endArrow=none;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="206" y="847" as="sourcePoint" />
+            <mxPoint x="1394" y="847" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="review-trunk" style="endArrow=block;html=0;strokeColor=#657B8A;strokeWidth=2.7;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="847" as="sourcePoint" />
+            <mxPoint x="800" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
