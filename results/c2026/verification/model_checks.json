@@ -1,0 +1,68 @@
+{
+  "source_files": 6,
+  "regression_tests_passed": 35,
+  "midnight_regression": {
+    "forecast_arrays_identical": true,
+    "cases": [
+      {
+        "variable_price": false,
+        "controller": "greedy",
+        "common_closure": false,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": false,
+        "controller": "greedy",
+        "common_closure": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": false,
+        "controller": "value_dp",
+        "common_closure": false,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": false,
+        "controller": "value_dp",
+        "common_closure": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": true,
+        "controller": "greedy",
+        "common_closure": false,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": true,
+        "controller": "greedy",
+        "common_closure": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": true,
+        "controller": "value_dp",
+        "common_closure": false,
+        "maximum_difference": 0.0
+      },
+      {
+        "variable_price": true,
+        "controller": "value_dp",
+        "common_closure": true,
+        "maximum_difference": 0.0
+      }
+    ]
+  },
+  "rolling_regression": {
+    "q3_maximum_difference": 0.0,
+    "q4_2_maximum_difference": 0.0,
+    "q4_3_maximum_difference": 0.0,
+    "price_forecast_arrays_identical": true
+  },
+  "q1_actual_run": {
+    "cost_yuan": 35126.948589389634
+  },
+  "excel_rebuild_byte_identical": true,
+  "verification_scope": "Q1 actual solve, 35 existing tests, 34-day Q2/Q4-2 equivalence fixtures, Q3/Q4 rolling fixtures and price forecasts; frozen annual results retained."
+}

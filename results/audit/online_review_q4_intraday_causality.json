@@ -1,8 +1,0 @@
-{
-  "planned_grid_max_abs_kwh": 0.0,
-  "decision_0h_objective_difference_yuan": 0.0,
-  "decision_6h_objective_difference_yuan": 0.0,
-  "contract_event_rows_through_6h": 24,
-  "contract_event_quantities_through_6h_identical": true,
-  "settlement_realized_prices_may_differ_by_design": true
-}

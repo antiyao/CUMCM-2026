@@ -1,0 +1,50 @@
+{
+  "period": {
+    "start": "2025-02-01",
+    "end": "2025-12-31",
+    "days": 334
+  },
+  "information_check": {
+    "latest_cost": 13207966.047942076,
+    "frozen_cost": 13275193.2015067,
+    "saving_yuan": 67227.15356462449,
+    "latest_emergency": 41443.1358701106,
+    "frozen_emergency": 48425.565241163,
+    "latest_terminal_soc": 2448.952529719545,
+    "frozen_terminal_soc": 2448.952529719545,
+    "latest_inventory_adjusted": 13209431.052303981,
+    "frozen_inventory_adjusted": 13276658.205868606,
+    "comparison_conditions": "Identical fixed parameters, initial SOC, contracting windows, load feedback and DP; only PV issue selection and its matching historical calibration change",
+    "scope": "Joint value of later PV issues under the fixed pipeline, not each issue marginal value or independent-year validation",
+    "physical_verification": {
+      "bus_residual_kwh": 9.094947017729282e-13,
+      "soc_recursion_residual_kwh": 9.094947017729282e-13,
+      "soc_lower_violation_kwh": 0.0,
+      "soc_upper_violation_kwh": 0.0,
+      "power_violation_kwh": 2.2737367544323206e-13,
+      "simultaneous_charge_discharge_kwh": 0.0,
+      "emergency_and_charge_overlap_kwh": 0.0,
+      "fee_reconciliation_yuan": 0.0,
+      "unused_source_reconciliation_kwh": 9.094947017729282e-13,
+      "continuous_state_residual_kwh": 0.0,
+      "nonnegative_violation_kwh": 0.0,
+      "passed": true
+    }
+  },
+  "forecast_metric_scope": "334 days times next 36 delivery intervals per issue; interval kWh, no smoothing",
+  "dataset": {
+    "actual_rows": 52560,
+    "forecast_rows": 35040,
+    "forecast_issues": 1460
+  },
+  "current_operating_counts": {
+    "emergency_intervals": 696,
+    "emergency_days": 171,
+    "hold_intervals": 10
+  },
+  "provenance": {
+    "results/q3/intervals.csv.gz": "4d7ac9bf05625de394d81518aaeb025fbb7eb97a2af864e6ca77c59270db4e98",
+    "configs/q3_current.json": "8ac3f64bf1da85e3bc9d6b78143d791c58886057262f2505b2a3edbecb39bea9",
+    "src/q3_paper_evidence.py": "d9756ee6545d7e9eb8758bf76cf11ce05bec3ba17f420457f8dfe5ef4c9dbd5c"
+  }
+}

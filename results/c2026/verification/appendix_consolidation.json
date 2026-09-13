@@ -1,0 +1,74 @@
+{
+  "microgrid_model_definitions_unchanged": true,
+  "problem1_model_definitions_unchanged": true,
+  "problem2_model_definitions_unchanged": true,
+  "problem3_model_definitions_unchanged": true,
+  "problem4_model_definitions_unchanged": true,
+  "slots_all_values_and_order_unchanged": true,
+  "daily_all_values_and_order_unchanged": true,
+  "consolidated_json_lossless": true,
+  "excel_byte_identical": {
+    "result4-2.xlsx": true,
+    "result4-3.xlsx": true,
+    "result2.xlsx": true,
+    "result3.xlsx": true,
+    "result1.xlsx": true
+  },
+  "annual_physical_checks": {
+    "q2": {
+      "balance": 2.2737367544323206e-12,
+      "state": 4.8618886694384855e-12,
+      "cost": 1.3642420526593924e-12,
+      "lower": 0.0,
+      "upper": 0.0,
+      "power": 0.0,
+      "simultaneous": 0.0,
+      "emergency_charging": 0.0,
+      "continuity": 0.0
+    },
+    "q3": {
+      "balance": 2.170708057747106e-12,
+      "state": 4.8618886694384855e-12,
+      "cost": 1.1368683772161603e-12,
+      "lower": 0.0,
+      "upper": 0.0,
+      "power": 0.0,
+      "simultaneous": 0.0,
+      "emergency_charging": 0.0,
+      "continuity": 0.0
+    },
+    "q4_2": {
+      "balance": 2.2737367544323206e-12,
+      "state": 4.909850304102292e-12,
+      "cost": 1.3642420526593924e-12,
+      "lower": 0.0,
+      "upper": 0.0,
+      "power": 0.0,
+      "simultaneous": 0.0,
+      "emergency_charging": 0.0,
+      "continuity": 0.0
+    },
+    "q4_3": {
+      "balance": 2.2737367544323206e-12,
+      "state": 4.796163466380676e-12,
+      "cost": 1.1368683772161603e-12,
+      "lower": 0.0,
+      "upper": 0.0,
+      "power": 0.0,
+      "simultaneous": 0.0,
+      "emergency_charging": 0.0,
+      "continuity": 0.0
+    }
+  },
+  "q1_actual_solve_cost_yuan": 35126.948589389634,
+  "source_sha256": {
+    "microgrid.py": "d7d84fe6a98ba5b54c664d81d7c16453ba7e0fa19ff68407f594ef151e253fed",
+    "problem1.py": "811791374c0290a9f4a4a303ce8abf07be5b134f8fec0a664a92bd2345f4440e",
+    "problem2.py": "54e06275b54863bc3532cb85919604edae317524a426cee71f4322f266982abc",
+    "problem3.py": "a103b873fc193a36bd578064cccb505c747a444cf20b31f807cdab76a7f79080",
+    "problem4.py": "eeddbd6e5be065b48d5dcc7d8bd1746d37da9bf267cf3b5ceda1cb2cd3ba035a"
+  },
+  "source_files": 5,
+  "package_files": 23,
+  "scope": "All original model function/class ASTs unchanged; all merged CSV/JSON values retained; package-only workbook reconstruction byte-identical; annual physical verification passed; Q1 actual solve reproduced. No annual re-solve."
+}

@@ -1,0 +1,130 @@
+{
+  "trash": "/Users/anti_yao/.Trash/CUMCM-cleanup-20260912-231119",
+  "removed": [
+    {
+      "path": "src",
+      "files": 104,
+      "bytes": 1134037
+    },
+    {
+      "path": "configs",
+      "files": 4,
+      "bytes": 2026
+    },
+    {
+      "path": "data/processed",
+      "files": 9,
+      "bytes": 11947234
+    },
+    {
+      "path": "data/templates",
+      "files": 5,
+      "bytes": 580975
+    },
+    {
+      "path": "results/c2026/annual",
+      "files": 28,
+      "bytes": 96016967
+    },
+    {
+      "path": "results/c2026/evidence/q3/manifest.json",
+      "files": 1,
+      "bytes": 2084
+    },
+    {
+      "path": "results/c2026/evidence/q3/validation.json",
+      "files": 1,
+      "bytes": 595
+    },
+    {
+      "path": "results/c2026/evidence/paper",
+      "files": 2,
+      "bytes": 6848
+    },
+    {
+      "path": "results/c2026/final_validation.json",
+      "files": 1,
+      "bytes": 2645
+    },
+    {
+      "path": "results/c2026/submission/export_payload.json",
+      "files": 1,
+      "bytes": 4585285
+    },
+    {
+      "path": "results/c2026/submission/附录完整代码.zip",
+      "files": 1,
+      "bytes": 137219
+    },
+    {
+      "path": "results/c2026/submission/支撑材料_待补AI详情.zip",
+      "files": 1,
+      "bytes": 18765718
+    },
+    {
+      "path": "results/c2026/support_materials",
+      "files": 110,
+      "bytes": 80368373
+    },
+    {
+      "path": "paper/code_appendix",
+      "files": 56,
+      "bytes": 402870
+    },
+    {
+      "path": "paper/overleaf/main.pdf",
+      "files": 1,
+      "bytes": 2078620
+    },
+    {
+      "path": "paper/overleaf/main.synctex.gz",
+      "files": 1,
+      "bytes": 191053
+    },
+    {
+      "path": "results/c2026/submission/C题参赛论文.pdf",
+      "files": 1,
+      "bytes": 2078620
+    },
+    {
+      "path": "scripts",
+      "files": 5,
+      "bytes": 81279
+    },
+    {
+      "path": "tests",
+      "files": 12,
+      "bytes": 104410
+    },
+    {
+      "path": ".pytest_cache",
+      "files": 4,
+      "bytes": 6856
+    },
+    {
+      "path": "regression-tests.log",
+      "files": 1,
+      "bytes": 1518
+    },
+    {
+      "path": "output",
+      "files": 219,
+      "bytes": 186637955
+    },
+    {
+      "path": "tmp",
+      "files": 177,
+      "bytes": 116300133
+    }
+  ],
+  "removed_files": 745,
+  "removed_bytes": 521433320,
+  "current_code_files": [
+    "export_results.py",
+    "microgrid.py",
+    "problem1.py",
+    "problem2.py",
+    "problem3.py",
+    "problem4.py"
+  ]
+}

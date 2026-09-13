@@ -1,0 +1,79 @@
+[
+  {
+    "doi": "10.1016/j.apenergy.2022.120028",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1016/j.jclepro.2022.132188",
+    "title": [
+      "A review of controllers and optimizations based scheduling operation for battery energy storage system towards decarbonization in microgrid: Challenges and future directions"
+    ],
+    "authors": [
+      "M.S. Hossain Lipu",
+      "Shaheer Ansari",
+      "Md. Sazal Miah",
+      "Kamrul Hasan",
+      "Sheikh T. Meraj",
+      "M. Faisal",
+      "Taskin Jamal",
+      "Sawal H.M. Ali",
+      "Aini Hussain",
+      "Kashem M. Muttaqi",
+      "M.A. Hannan"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "pages": "132188"
+  },
+  {
+    "doi": "10.1109/TSG.2012.2232943",
+    "title": [
+      "Optimal Control of End-User Energy Storage"
+    ],
+    "authors": [
+      "Peter M. van de Ven",
+      "Nidhi Hegde",
+      "Laurent Massoulie",
+      "Theodoros Salonidis"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2013,
+          6
+        ]
+      ]
+    },
+    "pages": "789-797"
+  },
+  {
+    "doi": "10.1109/CISS.2014.6814090",
+    "title": [
+      "Optimal control of storage for arbitrage, with applications to energy systems"
+    ],
+    "authors": [
+      "J.R. Cruise",
+      "R.J. Gibbens",
+      "S. Zachary"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2014,
+          3
+        ]
+      ]
+    },
+    "pages": "1-6"
+  },
+  {
+    "doi": "10.1109/TSG.2017.2753802",
+    "error": "HTTP Error 429: Too Many Requests"
+  }
+]

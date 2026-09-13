@@ -1,0 +1,29 @@
+[
+  {
+    "name": "current",
+    "question": "Q3",
+    "blend": 0.56,
+    "quantile": 0.65,
+    "window": 56,
+    "bias": true,
+    "adjustment": "next6",
+    "terminal": 2400,
+    "load_feedback": 0.5,
+    "price_days": 0,
+    "interpretation": "B",
+    "reference_mode": "initial_final",
+    "intraday_quantile": 0.625,
+    "terminal_weight": 1.5,
+    "forecast_updates": "latest",
+    "skip_hours": [],
+    "allow_decrease": true,
+    "early_quantile": null,
+    "rolling_terminal": 6000,
+    "reserve_fraction": 0.0,
+    "controller": "lookahead_dp",
+    "soc_step_kwh": 50.0,
+    "dp_terminal_weight": 1.5,
+    "future_error_scale": 1.0,
+    "value_discount": 0.95
+  }
+]

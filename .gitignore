@@ -228,21 +228,9 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Local reference papers, runtime links and reproducible bulk artifacts
-/0[456]-CUMCM2025C-*.pdf
+
+# Final solution runtimes and generated caches
+.venv-q2/
 **/node_modules/
-/results/audit/artifact_runtime/
-/results/audit/external_skills/
-/results/**/*artifact*inspection.ndjson
+/0[456]-CUMCM2025C-*.pdf
 /results/**/intervals.csv.gz
-/results/**/forecast_evaluation.csv.gz
-/results/**/oracle_intervals.csv.gz
-/results/**/forecast_cache.npz
-/results/audit/q2_external_v1/reproduction/results/*/trace.csv
-/results/audit/intake/
-/results/audit/paper_visual_pages/
-/results/audit/paper_visual_final/
-/results/backtests/export_previews/
-/results/q2_iteration/review_candidate_v4/export_audit/export_previews/
-/paper/releases/**/*.zip
-/paper/releases/**/local*preview.pdf

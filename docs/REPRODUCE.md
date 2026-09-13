@@ -1,67 +1,35 @@
-# 核验与复现
+# C题支撑材料
 
-## 先核验当前交付
+四问各有一份求解代码，公共微网模型、储能控制与结果导出集中在microgrid.py。
 
-```bash
-python3 src/catalog_results.py --check
-```
-
-该命令只用Python标准库，核对五本工作簿与对应已验证源的字节、年度日汇总与summary费用、Q2选择记录、覆盖范围及当前索引。不会重跑优化，也不会修改结果。
-
-科学计算环境使用Python 3.12和`configs/requirements-lock.txt`：
+使用Python 3.12，从解压目录运行：
 
 ```bash
-python3.12 -m venv .venv
-.venv/bin/python -m pip install -r configs/requirements-lock.txt
-.venv/bin/python -m pytest tests -q
+python -m pip install -r configs/requirements.txt
+python src/problem1.py --input data/processed/annual_inputs.npz --out runs/q1
+python src/problem2.py --out runs/q2
+python src/problem3.py --out runs/q3
+python src/problem4.py --part 2 --out runs/q4_2
+python src/problem4.py --part 3 --out runs/q4_3
 ```
 
-当前已安装环境为Python 3.12.14；依赖锁记录本次实际使用版本。原始竞赛输入在`data/raw/2026C/`，空模板在`data/templates/2026C/`，精确派生输入在`data/processed/2026C/`。
+输出目录使用尚不存在的新目录。问题二至四加--checks可运行论文对应的预测、储能控制、网格或电价基准比较。问题一默认输出LP/MILP/网格DP及敏感性检验结果。年度求解可能需要较长时间。
 
-## 重算策略
-
-Q1：`src/solve_q1.py`固定写入`results/q1/`，需要复算时在独立克隆或工作副本中运行。它会生成真实调度、独立物理验证和最优性证书；运行日期、时间、Git状态等元数据可能改变，比较数值而非整个summary文件哈希。
+检查包内冻结年度结果，并据此重建Excel：
 
 ```bash
-.venv/bin/python src/solve_q1.py
+python src/microgrid.py verify
+python src/microgrid.py rebuild --out runs/workbooks
 ```
 
-Q2最新推荐由下列迭代生成，包含多个候选，耗时长于基础测试。输出目录必须不存在：
+重建后的五份Excel在runs/workbooks/filled。程序直接沿用包内result*.xlsx的行数、表头、时间标签、省略号及格式，从运行轨迹重新计算并填写数据，因此无需另附空白模板。运行轨迹使用包内冻结结果；上面各模型命令的新结果独立写入指定目录。
 
-```bash
-.venv/bin/python src/q2_iteration.py --policy --output results/q2_iteration/reproduce_policy
-```
+年度计划/调整表覆盖334天，充放电与紧急购电表只填原有日期。完整年度轨迹合并在annual_slots.csv，逐日汇总在annual_daily.csv，case列区分q2、q3、q4_2、q4_3；各case内保持日期和时段顺序。原数值文本完整保留，各方案独有字段在其他方案的记录中留空。
 
-Q3/Q4当前方案：
+summaries.json按q1、q2、q3、q4_2、q4_3保存各问摘要。analysis_results.json汇总问题一敏感性和网格检验、问题三预报精度和信息价值、Excel及代码核验结果；CSV表以columns和rows保存，数值字符串保留原精度。previous_model_checks记录合并前验证，consolidation记录本次整理验证。
 
-```bash
-.venv/bin/python src/backtest.py --strategies q3_adjust_A,q4_2_margin,q4_3_adjust_A --end-date 2025-12-31 --output results/backtests/reproduce_q3_q4
-```
+结果表购电标签比模型区间晚十分钟，按原样保留。数值按144个区间的序号填写，slot=0对应00:00-00:10，slot=143对应23:50-24:00；问题一的精确时间见schedule.csv。
 
-完整v1的13项策略及同机会消融命令见`context/BACKTEST_REPORT.md`，Q2情景/自适应实验见`context/Q2_ITERATION_PLAN.md`与`paper/analysis/第二问迭代评估.md`。复算使用新输出目录，不覆盖历史验证记录。
+问题四-2在不同数值库环境下冷复跑可能相差约10元，本包保留论文对应冻结结果。原始比赛附件未重复打包，处理后的必要输入已全部包含。
 
-Git保留参数、输入/源码指纹、源码快照、日/月汇总和验证JSON；体积较大的`intervals.csv.gz`、预测缓存、逐单元格NDJSON及临时视觉截图留在本地。高级逐区间审计和重新导出Excel前，需要先重跑相应策略得到轨迹。
-
-## Excel与论文
-
-已有五本当前工作簿可直接读取，不依赖Codex工具。重新导出Excel需Codex bundled Node和`@oai/artifact-tool`，以及`BUNDLED_PYTHON`所指向的bundled Python；运行时不随仓库分发。按依赖加载工具的真实位置重新建立`results/audit/artifact_runtime/node_modules`链接，或调整运行环境。不要把本机依赖目录提交。
-
-年度导出必须明确策略来源，并使用新的目标目录与审计目录。例如复算完成后：
-
-```bash
-node src/export_annual.mjs --q2 results/q2_iteration/reproduce_policy/bias_hourly_risk --q3 results/backtests/reproduce_q3_q4/q3_adjust_A --q4-2 results/backtests/reproduce_q3_q4/q4_2_margin --q4-3 results/backtests/reproduce_q3_q4/q4_3_adjust_A --output-dir results/reproduced_workbooks --report-dir results/reproduced_export_audit
-```
-
-不要用历史`q2_margin`替换当前推荐。`src/package_first_round.py`是历史v1打包器，旧Q2交付表删除后会明确拒绝生成缺少工作簿的包；它不是当前结果发布入口。
-
-正式论文：
-
-```bash
-latexmk -xelatex -interaction=nonstopmode -halt-on-error -cd -outdir=build paper/overleaf/main.tex
-```
-
-图示文件已提供矢量SVG/PDF。重绘Canva图示源需bundled Python的reportlab；本地STSong字体来自macOS字体集合，不在仓库分发。Canva中的已保存设计另采用思源宋体；导出与本地源的差别见`figures/overview/canva/README.md`。当前环境的验证不等于所有平台已完成全流程测试。
-
-## 解释边界
-
-Q2当前推荐是对这份数据的回溯选择，不能改写为一月跨家族盲测胜者。Q3/Q4仍使用v1方案，不与新Q2直接作信息价值归因。模板时间标签、效率/端口、反馈、合同退款与未来价格可见性仍以`context/ASSUMPTIONS.md`和`SETTLEMENT_SPEC.md`的暂定解释为条件。
+AI工具使用详情.pdf尚待队员补齐；加入后需再次核对文件列表、20MB限制及最终MD5。本包未上传比赛平台。

@@ -1,0 +1,97 @@
+{
+  "title": [
+    "Short-Term Residential Load Forecasting Based on LSTM Recurrent Neural Network"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-1229-3790",
+      "authenticated-orcid": false,
+      "given": "Weicong",
+      "family": "Kong",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9659-0858",
+      "authenticated-orcid": false,
+      "given": "Zhao Yang",
+      "family": "Dong",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Youwei",
+      "family": "Jia",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-4036-0839",
+      "authenticated-orcid": false,
+      "given": "David J.",
+      "family": "Hill",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-0503-183X",
+      "authenticated-orcid": false,
+      "given": "Yan",
+      "family": "Xu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yuan",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1
+      ]
+    ]
+  },
+  "page": "841-851",
+  "DOI": "10.1109/tsg.2017.2753802"
+}

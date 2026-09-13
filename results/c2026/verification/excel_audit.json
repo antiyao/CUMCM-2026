@@ -1,0 +1,147 @@
+{
+  "schema": "c2026-template-data-only-v1",
+  "row_policy": "Preserve all original rows and existing labels, including omission marks.",
+  "time_policy": "Preserve template labels; retain the accepted ordinal slot mapping.",
+  "workbooks": [
+    {
+      "filename": "result1.xlsx",
+      "template_sha256": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "output_sha256": "5de9d805d66cffa0b8c159d5813edb8d815f1c188f37c4505c3c925663367190",
+      "only_authorized_data_cells_changed": true,
+      "source_unchanged": true,
+      "independent_saved_xlsx_check": {
+        "engine": "OOXML readback",
+        "passed": true,
+        "checked_cells": 158,
+        "scope": "All filled cells and all preserved original cells and workbook parts"
+      },
+      "unchanged_row_count_and_attributes": true,
+      "unchanged_styles_headers_metadata_and_other_parts": true,
+      "filled_cells": 158,
+      "sheet_coverage": {
+        "计划购电量": [],
+        "充放电量": []
+      }
+    },
+    {
+      "filename": "result2.xlsx",
+      "template_sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "output_sha256": "c23b0f4ed023740832305ce97bbba7b92d44800cb4753646c79a3d01e410ce8b",
+      "only_authorized_data_cells_changed": true,
+      "source_unchanged": true,
+      "independent_saved_xlsx_check": {
+        "engine": "OOXML readback",
+        "passed": true,
+        "checked_cells": 48812,
+        "scope": "All filled cells and all preserved original cells and workbook parts"
+      },
+      "unchanged_row_count_and_attributes": true,
+      "unchanged_styles_headers_metadata_and_other_parts": true,
+      "filled_cells": 48812,
+      "sheet_coverage": {
+        "计划购电量": "334 days",
+        "充放电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-12-31"
+        ],
+        "紧急购电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-12-31"
+        ]
+      }
+    },
+    {
+      "filename": "result3.xlsx",
+      "template_sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "output_sha256": "49374d4682cb17912c161401103932d71ec59e7e96929291282d713b2bf2ed42",
+      "only_authorized_data_cells_changed": true,
+      "source_unchanged": true,
+      "independent_saved_xlsx_check": {
+        "engine": "OOXML readback",
+        "passed": true,
+        "checked_cells": 97594,
+        "scope": "All filled cells and all preserved original cells and workbook parts"
+      },
+      "unchanged_row_count_and_attributes": true,
+      "unchanged_styles_headers_metadata_and_other_parts": true,
+      "filled_cells": 97594,
+      "sheet_coverage": {
+        "计划购电量": "334 days",
+        "调整购电量": "334 days",
+        "充放电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-03-20",
+          "2025-12-31"
+        ],
+        "紧急购电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-12-31"
+        ]
+      }
+    },
+    {
+      "filename": "result4-2.xlsx",
+      "template_sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "output_sha256": "97082ab99cb3d8bb7fbe95e90b7b16748f012fd1b240c9f33dbf7ed7df7b603b",
+      "only_authorized_data_cells_changed": true,
+      "source_unchanged": true,
+      "independent_saved_xlsx_check": {
+        "engine": "OOXML readback",
+        "passed": true,
+        "checked_cells": 48812,
+        "scope": "All filled cells and all preserved original cells and workbook parts"
+      },
+      "unchanged_row_count_and_attributes": true,
+      "unchanged_styles_headers_metadata_and_other_parts": true,
+      "filled_cells": 48812,
+      "sheet_coverage": {
+        "计划购电量": "334 days",
+        "充放电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-12-31"
+        ],
+        "紧急购电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-12-31"
+        ]
+      }
+    },
+    {
+      "filename": "result4-3.xlsx",
+      "template_sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "output_sha256": "d11ecd4dbbe527f16493d3ad35bda8b1afd4c11a8154fb91d8c7be2287fd09f0",
+      "only_authorized_data_cells_changed": true,
+      "source_unchanged": true,
+      "independent_saved_xlsx_check": {
+        "engine": "OOXML readback",
+        "passed": true,
+        "checked_cells": 97594,
+        "scope": "All filled cells and all preserved original cells and workbook parts"
+      },
+      "unchanged_row_count_and_attributes": true,
+      "unchanged_styles_headers_metadata_and_other_parts": true,
+      "filled_cells": 97594,
+      "sheet_coverage": {
+        "计划购电量": "334 days",
+        "调整购电量": "334 days",
+        "充放电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-03-20",
+          "2025-12-31"
+        ],
+        "紧急购电量": [
+          "2025-02-01",
+          "2025-02-02",
+          "2025-12-31"
+        ]
+      }
+    }
+  ]
+}

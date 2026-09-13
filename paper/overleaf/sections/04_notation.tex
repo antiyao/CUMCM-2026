@@ -1,8 +1,34 @@
-\section{符号说明}
 \begin{center}
-\begin{tabular}{cc}
-\hline
-\makebox[.3\textwidth][c]{符号} &
-\makebox[.4\textwidth][c]{意义} \\ \hline
-\end{tabular}
+\small\renewcommand{\arraystretch}{1.16}
+\begin{NiceTabularX}{\PaperNotationWidth}{
+  @{}
+  >{\centering\arraybackslash}m{0.23\textwidth}
+  >{\raggedright\arraybackslash}X
+  >{\raggedleft\rightskip=3mm\arraybackslash}m{0.17\textwidth}
+  @{}
+}
+\CodeBefore
+  \rowcolor{paperpale}{1}
+  \rowcolor{paperstripe}{3,5,7,9,11,13,15}
+\Body
+\toprule
+符号 & 意义 & 单位 \\
+\midrule
+$k,t,T$ & 日期、区间编号与每日区间数，$T=144$ & --- \\
+$\Delta t$ & 每个调度区间长度，取$1/6$ & h \\
+$L_{kt},V_{kt}$ & 各区间负载电量与光伏电量；问题一$V_t$为给定预测 & kWh \\
+$p_t$ & 对应交付区间的正常购电单价 & 元/kWh \\
+$q_{kt}^{0},q_{kt}^{\rm f},u_{kt}$ & 零点计划量、最终确认量、实际紧急购电量 & kWh \\
+$c_{kt},d_{kt},w_{kt}$ & 交流侧充电量、放电量及未利用电量 & kWh \\
+$E_{kt},\bar E_{kt}$ & 电池内部实际储电量、日前计划储电量 & kWh \\
+$E_{\min},E_{\max}$ & 储电量下限1200、上限10800 & kWh \\
+$P_{\max}$ & 最大交流侧充放电功率，取5000 & kW \\
+$\eta_c,\eta_d$ & 单程充电与放电效率，均取0.9 & --- \\
+$\widehat N_{kt},r_{kt},m_{kt}$ & 净负载预测、历史预测误差、用电安全余量 & kWh \\
+$\mathcal R_{k,h(t)},\mathcal R_{k,r,h(t)}$ & 问题二问题三按发布时间和小时整理的历史残差集合 & --- \\
+$\mathcal V_{k,t}(E)$ & 给定储电量下的后续紧急购电费与日末补电费用估计 & 元 \\
+$e_{kt}^{\star},\kappa_k$ & 建议保留的储电量、日末储电不足的单位代价 & kWh，元/kWh \\
+$J,J_{\rm LP},J_{\rm year}$ & 单日费用、线性松弛最优费用、评估期总费用 & 元 \\
+\bottomrule
+\end{NiceTabularX}
 \end{center}

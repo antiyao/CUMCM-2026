@@ -1,0 +1,25 @@
+\begin{NiceTabularX}{\textwidth}{
+  @{}
+  l >{\raggedleft\arraybackslash}p{13mm} X
+  l >{\raggedleft\arraybackslash}p{13mm} X
+  l >{\raggedleft\arraybackslash}p{13mm}
+  @{}
+}
+\CodeBefore
+  \rowcolor{paperpale}{1}
+  \rowcolor{paperstripe}{3}
+\Body
+\toprule
+时间段 & 购电量 & & 时间段 & 购电量 & & 时间段 & 购电量 \\
+\midrule
+10:00--10:10 & 0.00 & & 12:00--12:10 & 480.41 & & 14:00--14:10 & 0.00 \\
+16:00--16:10 & 445.43 & & 18:00--18:10 & 531.89 & & 20:00--20:10 & 0.00 \\
+\Block[l]{1-*}{
+  \makebox[\textwidth][l]{
+    全天购电量/kWh\hspace{20mm}59,482.70
+    \hfill
+    全天购电费/元\hspace{20mm}35,126.95
+  }
+} & & & & & & & \\
+\bottomrule
+\end{NiceTabularX}

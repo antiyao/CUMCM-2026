@@ -1,114 +1,25 @@
-# Decision Log
+# 当前有效决定
 
-## D001 — Historical-paper distillation workflow v1.1
+1. Q1采用LP主求解，以MILP和网格DP验证。
+2. Q2采用固定Ridge预测、近3日偏差修正、0.8分位数安全余量和边际价值DP。
+3. Q3采用当前结构：0.56/0.44融合预报、56日残差、0.65/0.625分位数、六小时分段更新、允许增购和减购、50 kWh网格及0.95后续价值权重的递减价值DP。
 
-**Decision:**\
-Keep the existing 16-section per-paper structure. For future papers, add structured model-decision, parameter/assumption, validation, sensitivity/robustness, reproduction, numerical-sanity, and extended traceability blocks. Encode the workflow in the repository Skill `.agents/skills/cumcm-paper-distillation/`. Keep the five Batch 1 reports unchanged as the calibration set.
+4. Q4-2采用SJTU Overleaf现稿对应的新方案：因果电价预测、零点全天计划和边际价值DP。
+5. Q4-3沿用Q3预测、策略和储能控制结构，使用与Q4-2相同的预测电价规划，并按附件4实际电价结算。
+6. `results/c2026`、`paper/overleaf`和`src`是唯一有效结果、论文与代码位置。旧候选、搜索结果、重复工作包和过期论文副本删除。
+7. 论文严格以当前线上稿的章节层级、表格、配色、字体和表达方式为准，正文不超过30页，完整代码附录页数不限。
+8. 不执行Git提交、推送、合并或变基，除非用户另行要求。
+9. 表格按语义分组：时间段与对应购电量、同一日期下的充放电或原计划/最终量应组内紧凑、组间留白较大；数值及其直接表头右对齐，跨列日期在本组居中，底色连续。不能仅移动数值代替分组排版。
+10. 按Yao要求，论文购电安排统一使用“策略”命名，覆盖正文、图表及对应绘图源码；模型、公式和数值不变。
+11. 所有表格整体居中，末尾不设空白列或额外右侧内边距；末列内容、跨列汇总最后数值、底色与横线右端齐平。组间留白只能放在组与组之间。
+12. 统一采用“递减价值DP”“后续价值权重”“全日规划、六小时更新”“六小时分段更新”“逐日选取预测方法”“数据时序检验”“历史残差分布”“实际年末储电量”“策略调整费用净额”和“实际运行阶段”等表述；保留“双向策略调整”“固定Ridge”“冻结购电计划”。
 
-**Reason:**\
-Batch 1 demonstrated sufficient mathematical depth and traceability, while revealing repeatable needs for explicit source/code checks, numerical reconciliation, evidence classification, and resumable metadata updates.
+13. 按Yao要求，src只保留五份论文相关代码，必要公共函数并入模型；旧源码与重复副本删除，冻结结果保留。论文在参考文献后采用附录A文件列表、附录B代码结构；文件列表只显示文件名与功能描述，代码标题同样不列相对路径，运行命令保留在代码包说明中。
 
-**Alternatives Considered:**\
-Rewrite the five Batch 1 reports into a new structure; replace the 16-section schema; keep the workflow only as prose without a reusable Skill.
+14. 提交代码包所有文件使用全局唯一的文件名；同名计算模块按功能命名，导入与源文件引用同步变更。省去5个空初始化文件，包目录采用Python命名空间包；公共接口与版本常量保留为独立命名模块。
 
-**Status:** Accepted
+15. 按Yao明确要求，五份Excel以当前根目录原始模板为基准，仅填写已有空白数据位置；不展开省略号、不增删行列、不改表头、日期和时间标签、格式或其他原内容。年度充放电及紧急购电的完整明细在支撑材料CSV中提供。
 
-## D002 — Final historical-literature repository layer
+16. 附录和支撑包仅保留四问求解与共享微网模型五份代码，结果导出并入共享模型；不附独立输入校验、版本接口、旧候选、测试或绘图排版脚本。当前包和PDF只在submission保留一份，旧版本移至废纸篓。
 
-**Decision:**\
-Keep the Git-shareable `literature/` layer limited to a concise README, 32 validated per-paper reports, compact core/provenance/completion metadata, the detailed model matrix, and lightweight INDEX/QUICK_REFERENCE retrieval files. Keep raw PDFs, OCR, acquisition evidence, old batch audits, and corpus-maintenance scripts locally available but Git-ignored.
-
-**Reason:**\
-This preserves distilled knowledge and claim-level provenance while reducing the intended Git payload from hundreds of megabytes to a primarily text-based retrieval layer. The local archive retains original evidence for future re-audit without making it a normal repository dependency.
-
-**Alternatives Considered:**\
-Commit the full raw/extracted corpus; delete local source material; keep all acquisition and progress tables in the shared metadata directory; remove the detailed model matrix after creating the compact core table.
-
-**Status:** Accepted
-
-## D003 — Competition-time problem-solving Skill
-
-**Decision:**\
-Use a separate repository Skill for active CUMCM problem solving. It prioritizes the current official problem and data, then team context, then the cleaned historical retrieval layer. It retrieves about three to six reports when historical coverage is material, but uses at most two targeted auxiliary reports for known corpus gaps or narrow diagnostics. It compares end-to-end candidate pipelines, requires baselines and validation planning, and writes shared modeling state only after a direction is accepted or explicitly requested.
-
-**Reason:**\
-Historical papers improve method selection and auditing but are not templates. Independent forward tests showed that a softer weak-match rule still caused excessive retrieval in a causal-inference problem, so the hard two-report cap preserves first-principles reasoning where the corpus is weak.
-
-**Alternatives Considered:**\
-Merge competition solving into the paper-distillation Skill; scan all 32 reports for every problem; rank candidate models with a fixed weighted score; use historical award status as a model-selection signal.
-
-**Status:** Accepted
-
-## D004 — Paper workspace and Overleaf collaboration
-
-**Decision:**\
-Preserve the imported 2026 LaTeX template in `paper/template-original/`, keep the standalone active manuscript in `paper/overleaf/`, and save dated source/PDF snapshots in `paper/releases/`. Use SJTU Overleaf for collaborative manuscript editing and compilation. Keep code and generated results in the repository; coordinate manuscript and figure transfers through one integrator.
-
-**Reason:**\
-Yao approved organizing the template and creating the online paper project. A standalone paper directory can be uploaded and compiled without the entire modeling repository, while preserving the original template for reference.
-
-**Alternatives Considered:**\
-Keep the template at repository root; upload the full modeling repository; allow uncoordinated simultaneous local and online manuscript edits.
-
-**Status:** Accepted
-
-## D005 — C题真实建模工程与原件归档
-
-**Decision:** 用户2026-09-10明确授权按根总指令v2执行审计、原件仅路径迁移、Q1真实求解并在数据充分时继续；当前代码/结果以本地仓库为准。采用HiGHS MILP、独立物理检查、同约束LP下界和可行基线，禁止把全知数据注入在线规划。
-
-**Reason:** 题面/附件齐全，模型线性；MILP有可核验界，避免无必要启发式。已实读历史知识库，采用接口与证据审计，不再蒸馏。
-
-**Status:** Accepted for implementation by explicit user request；解释性假设仍Under Review。
-
-## D006 — 本轮论文与协作边界
-
-**Decision:** 本轮按最新用户总指令使用本地LaTeX，不以Overleaf为前提；保留D004既有paper/overleaf与队友文件，不进行远端同步或覆盖。所有数值文本从真实结果生成，保留实际AI辅助记录，队员人工审核状态不得虚构。
-
-**Status:** Accepted for this run by explicit user request。
-
-## D007 — 年度主策略与样本比较边界
-
-**Decision:** 导出固定采用预设q2_margin、q3_adjust_A、q4_2_margin、q4_3_adjust_A。B退款解释和greedy控制只作为对照，不按全年结果倒选并重命名主策略。Q3额外加入冻结零点预报的同机会重规划对照，分离终端/重优化与预报更新；观察到新预报当前利用方式不一定省费，如实保留。
-
-**Reason:** 按题目主暂定口径形成可复现结果，同时保护在线评估不被全年事后选模污染。A/B与实时聚合观测依旧是Under Review解释。
-
-**Status:** Implementation choice under the user-authorized master-prompt baseline; not a claim of globally optimal online strategy。
-
-## D008 — Q2迭代与外部结果的比较口径
-
-**Decision:** 用户明确授权审查外部工程并实际迭代。v1结果、原下载目录和Q1/Q3/Q4模型保留；新Q2候选在隔离目录导出。比较控制相同输入/初始状态/物理与账务口径，分别标记一月校准胜者和全年回溯最低；不将外部报告相对其自身A的9.06%改写为本地增益。
-
-**Result:** bias_hourly_risk是已试候选中最低费用，但比已有greedy仅省0.055436%，周块描述区间跨0；紧急量减少24.3523%，未利用量增加。价格保留、动态选择、场景与执行一致SAA失败结果均保留。新策略不宣称全局最优或盲测获胜。
-
-**Status:** Accepted for scoped experimentation by user request；部署选择/正式提交及题意歧义未因此获确认。ORACLE仅在候选完成后诊断，禁止回填线上策略。
-
-## D009 — 第二问最终推荐的明确收敛
-
-**Decision:** 针对用户“需要一个最终答案、是否费用越低越好”的要求，推荐bias_hourly_risk，费用13,868,005.116996元，统一复制到results/final_recommendation/result2.xlsx。当前附件、相同模型约束下，以已验证总费用最低为选择依据；原主方案与原greedy保留为对照。
-
-**Boundary:** 明确排除使用未来真值的ORACLE和不同假设/结算下的费用。推荐是研究后的当前数据选择，不声称一月跨家族事前选中、外部盲测获胜或全局最优。正式提交语义仍受模板标签问题约束。
-
-**Status:** Assistant final recommendation requested by user；没有执行部署或提交，旧数据及结果不覆盖。
-
-## D010 — 当前论文线上项目与原样同步
-
-**Decision:** 用户明确指定`https://latex.sjtu.edu.cn/project/6aa27f6bbd92933f73a5ac15`为本次上传目标，授权将当前本地`paper/overleaf/`工程原样同步。此授权更新D006针对先前轮次“不进行远端同步”的范围限制；不扁平化章节、不改写正文或样式。
-
-**Result:** 23个工程文件已上传，sections/figures/tables结构保持；main.tex、XeLaTeX、TeX Live 2025在线生成4页。旧线上项目已复制备份到`6aa2f413bd92933f73a7e404`，本地源文件上传前后哈希不变；保留线上原有无关文件，未执行Git提交或推送。
-
-**Status:** Accepted by explicit user request。
-
-When recording a decision, use:
-
-## D001 — Short title
-
-**Decision:**\
-What was decided.
-
-**Reason:**\
-Why this option was selected.
-
-**Alternatives Considered:**\
-Other approaches considered.
-
-**Status:** Accepted / Rejected / Under Review
+17. 按Yao要求精简附录：同后缀集中排列，文件清单23项占一页；年度明细按case合并为两份CSV，各问摘要与分析核验合并为两份JSON。补充包移除五份空模板及重复文件清单，直接以已填Excel为格式基准重建；五份提交表数值、行列和格式不变。本地原始模板保留作溯源。

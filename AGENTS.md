@@ -28,6 +28,12 @@ If information is missing or ambiguous, explicitly state the uncertainty instead
 - `paper/`: LaTeX source and paper-related files.
 - `context/`: shared project state and team memory.
 
+## Paper Writing
+
+Before drafting, revising, or reviewing project prose, read `docs/WRITING_STYLE.md` and `.agents/skills/humanizer/SKILL.md`. Apply them to Chinese academic writing, including abstracts, assumptions, captions, tables, and result discussions. The project-specific rules in `docs/WRITING_STYLE.md` take precedence over Humanizer's generic style and output suggestions.
+
+Write direct, complete statements about the model, method, result, and applicable conditions. Avoid vague jargon such as repeated “口径” and drafting instructions such as “这里不能说……只能说……”. Preserve necessary assumptions, uncertainty, numerical values, formulas, and evidence. Do not copy internal review instructions into the paper.
+
 ## Modeling Rules
 
 All important numerical results must be reproducible from code.

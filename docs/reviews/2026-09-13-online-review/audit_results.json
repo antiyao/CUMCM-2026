@@ -1,0 +1,345 @@
+{
+  "snapshot_pdf_sha256": "1a9ad0caf7fc568d634541eea8a7fcfd7198361867e8edfe5ea9f36db96b5b37",
+  "annual": {
+    "q2": {
+      "slots": 48096,
+      "dates": 334,
+      "cost_yuan": 13832796.87219677,
+      "cost_difference_yuan": -5.587935447692871e-09,
+      "max_balance_residual_kwh": 2.2737367544323206e-12,
+      "max_state_residual_kwh": 2.5579538487363607e-12,
+      "max_continuity_residual_kwh": 0.0,
+      "minimum_soc_kwh": 1200.0,
+      "maximum_soc_kwh": 10800.0,
+      "maximum_charge_kwh": 833.333333333333,
+      "maximum_discharge_kwh": 833.333333333333,
+      "simultaneous_slots": 0
+    },
+    "q3": {
+      "slots": 48096,
+      "dates": 334,
+      "cost_yuan": 13207966.047942072,
+      "cost_difference_yuan": -3.725290298461914e-09,
+      "max_balance_residual_kwh": 2.170708057747106e-12,
+      "max_state_residual_kwh": 4.8618886694384855e-12,
+      "max_continuity_residual_kwh": 0.0,
+      "minimum_soc_kwh": 1200.0,
+      "maximum_soc_kwh": 10800.0,
+      "maximum_charge_kwh": 833.333333333333,
+      "maximum_discharge_kwh": 833.333333333333,
+      "simultaneous_slots": 0
+    },
+    "q4_2": {
+      "slots": 48096,
+      "dates": 334,
+      "cost_yuan": 14576455.824668864,
+      "cost_difference_yuan": -5.587935447692871e-09,
+      "max_balance_residual_kwh": 2.2737367544323206e-12,
+      "max_state_residual_kwh": 2.5579538487363607e-12,
+      "max_continuity_residual_kwh": 0.0,
+      "minimum_soc_kwh": 1200.0,
+      "maximum_soc_kwh": 10800.0,
+      "maximum_charge_kwh": 833.333333333333,
+      "maximum_discharge_kwh": 833.333333333333,
+      "simultaneous_slots": 0
+    },
+    "q4_3": {
+      "slots": 48096,
+      "dates": 334,
+      "cost_yuan": 13946759.265871178,
+      "cost_difference_yuan": -7.450580596923828e-09,
+      "max_balance_residual_kwh": 2.2737367544323206e-12,
+      "max_state_residual_kwh": 4.661160346586257e-12,
+      "max_continuity_residual_kwh": 0.0,
+      "minimum_soc_kwh": 1200.0,
+      "maximum_soc_kwh": 10800.0,
+      "maximum_charge_kwh": 833.333333333333,
+      "maximum_discharge_kwh": 833.333333333333,
+      "simultaneous_slots": 0
+    }
+  },
+  "forecast_errors": {
+    "issued_pv_kwh": {
+      "mae_kwh": 20.006287017746914,
+      "rmse_kwh": 36.913235359475614,
+      "max_absolute_kwh": 149.11097083333334
+    },
+    "fused_pv_kwh": {
+      "mae_kwh": 19.929601662576523,
+      "rmse_kwh": 39.38494466089024,
+      "max_absolute_kwh": 140.54659672261027
+    },
+    "annual_pooled_rmse_kwh": {
+      "发布预报": 31.43182486838819,
+      "融合修正预报": 34.29407065080225
+    }
+  },
+  "q2_terminal": {
+    "last_price": 0.4276,
+    "kappa": 0.41255555555555556,
+    "last_objective_slope_below_6000": 1.5116444444444443,
+    "last_objective_slope_above_6000": 1.9242,
+    "last_threshold_kwh": 1200
+  },
+  "appendix_code": {
+    "problem1.py": {
+      "syntax_parsed": true,
+      "lines": 296,
+      "matches_local_source": true
+    },
+    "problem2.py": {
+      "syntax_parsed": true,
+      "lines": 310,
+      "matches_local_source": true
+    },
+    "problem3.py": {
+      "syntax_parsed": true,
+      "lines": 384,
+      "matches_local_source": true
+    },
+    "problem4.py": {
+      "syntax_parsed": true,
+      "lines": 326,
+      "matches_local_source": true
+    },
+    "microgrid.py": {
+      "syntax_parsed": true,
+      "lines": 1064,
+      "matches_local_source": false
+    }
+  },
+  "undefined_refs": [],
+  "unreferenced_figures_tables": [],
+  "local_workbooks": {
+    "result1.xlsx": {
+      "sha256": "5de9d805d66cffa0b8c159d5813edb8d815f1c188f37c4505c3c925663367190",
+      "sheets": {
+        "计划购电量": {
+          "rows": 145,
+          "sample_cells": {
+            "A1": "时间段",
+            "B1": "购电量",
+            "A2": "0:10-0:20",
+            "B2": "1406.6410999999998"
+          }
+        },
+        "充放电量": {
+          "rows": 7,
+          "sample_cells": {
+            "A1": "时间段",
+            "B1": "充电量",
+            "C1": "放电量",
+            "A2": "0:00-4:00",
+            "B2": "4500",
+            "C2": "0"
+          }
+        }
+      }
+    },
+    "result2.xlsx": {
+      "sha256": "c23b0f4ed023740832305ce97bbba7b92d44800cb4753646c79a3d01e410ce8b",
+      "sheets": {
+        "计划购电量": {
+          "rows": 335,
+          "sample_cells": {
+            "A1": "日期\\时间",
+            "B1": "0:10-0:20",
+            "C1": "0:20-0:30",
+            "A2": "45689",
+            "B2": "1322.3006391936331",
+            "C2": "1322.395670599692"
+          }
+        },
+        "充放电量": {
+          "rows": 20,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "时间段",
+            "C1": "充电量",
+            "A2": "45689",
+            "B2": "0:00-4:00",
+            "C2": "5333.6963876655627"
+          }
+        },
+        "紧急购电量": {
+          "rows": 11,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "购电时间段",
+            "C1": "购电量",
+            "A2": "45689",
+            "B2": "无",
+            "C2": "0"
+          }
+        }
+      }
+    },
+    "result3.xlsx": {
+      "sha256": "49374d4682cb17912c161401103932d71ec59e7e96929291282d713b2bf2ed42",
+      "sheets": {
+        "计划购电量": {
+          "rows": 335,
+          "sample_cells": {
+            "A1": "日期\\时间",
+            "B1": "0:10-0:20",
+            "C1": "0:20-0:30",
+            "A2": "45689",
+            "B2": "1306.0274978241259",
+            "C2": "1305.995288722439"
+          }
+        },
+        "调整购电量": {
+          "rows": 335,
+          "sample_cells": {
+            "A1": "日期\\时间",
+            "B1": "0:10-0:20",
+            "C1": "0:20-0:30",
+            "A2": "45689",
+            "B2": "1306.0274978241259",
+            "C2": "1305.995288722439"
+          }
+        },
+        "充放电量": {
+          "rows": 26,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "时间段",
+            "C1": "充电量",
+            "A2": "45689",
+            "B2": "0:00-4:00",
+            "C2": "5307.4930656879815"
+          }
+        },
+        "紧急购电量": {
+          "rows": 11,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "购电时间段",
+            "C1": "购电量",
+            "A2": "45689",
+            "B2": "无",
+            "C2": "0"
+          }
+        }
+      }
+    },
+    "result4-2.xlsx": {
+      "sha256": "97082ab99cb3d8bb7fbe95e90b7b16748f012fd1b240c9f33dbf7ed7df7b603b",
+      "sheets": {
+        "计划购电量": {
+          "rows": 335,
+          "sample_cells": {
+            "A1": "日期\\时间",
+            "B1": "0:10-0:20",
+            "C1": "0:20-0:30",
+            "A2": "45689",
+            "B2": "1322.3006391936331",
+            "C2": "1322.395670599692"
+          }
+        },
+        "充放电量": {
+          "rows": 20,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "时间段",
+            "C1": "充电量",
+            "A2": "45689",
+            "B2": "0:00-4:00",
+            "C2": "5333.6963876655645"
+          }
+        },
+        "紧急购电量": {
+          "rows": 11,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "购电时间段",
+            "C1": "购电量",
+            "A2": "45689",
+            "B2": "无",
+            "C2": "0"
+          }
+        }
+      }
+    },
+    "result4-3.xlsx": {
+      "sha256": "d11ecd4dbbe527f16493d3ad35bda8b1afd4c11a8154fb91d8c7be2287fd09f0",
+      "sheets": {
+        "计划购电量": {
+          "rows": 335,
+          "sample_cells": {
+            "A1": "日期\\时间",
+            "B1": "0:10-0:20",
+            "C1": "0:20-0:30",
+            "A2": "45689",
+            "B2": "1306.0274978241259",
+            "C2": "1305.995288722439"
+          }
+        },
+        "调整购电量": {
+          "rows": 335,
+          "sample_cells": {
+            "A1": "日期\\时间",
+            "B1": "0:10-0:20",
+            "C1": "0:20-0:30",
+            "A2": "45689",
+            "B2": "1306.0274978241259",
+            "C2": "1305.995288722439"
+          }
+        },
+        "充放电量": {
+          "rows": 26,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "时间段",
+            "C1": "充电量",
+            "A2": "45689",
+            "B2": "0:00-4:00",
+            "C2": "5358.8384890868592"
+          }
+        },
+        "紧急购电量": {
+          "rows": 11,
+          "sample_cells": {
+            "A1": "日期",
+            "B1": "购电时间段",
+            "C1": "购电量",
+            "A2": "45689",
+            "B2": "无",
+            "C2": "0"
+          }
+        }
+      }
+    }
+  },
+  "local_package": {
+    "size_bytes": 18520158,
+    "sha256": "2efebe6cc45db231c9fc1dd4078099239cad5ece99d2c423f82e56710b9d7dbf",
+    "entries": [
+      "results/c2026/submission/result1.xlsx",
+      "results/c2026/submission/result2.xlsx",
+      "results/c2026/submission/result3.xlsx",
+      "results/c2026/submission/result4-2.xlsx",
+      "results/c2026/submission/result4-3.xlsx",
+      "data/processed/actuals_power.csv",
+      "data/processed/actuals_energy.csv",
+      "data/processed/pv_forecasts.csv",
+      "data/processed/q1_inputs.csv",
+      "results/c2026/q1/schedule.csv",
+      "results/c2026/annual_slots.csv",
+      "results/c2026/annual_daily.csv",
+      "data/processed/annual_inputs.npz",
+      "configs/q3_current.json",
+      "results/c2026/summaries.json",
+      "results/c2026/analysis_results.json",
+      "src/problem1.py",
+      "src/problem2.py",
+      "src/problem3.py",
+      "src/problem4.py",
+      "src/microgrid.py",
+      "configs/requirements.txt",
+      "README.md"
+    ],
+    "ai_named_entries": []
+  },
+  "scope": "Read-only current saved-output audit; no complete model rerun."
+}

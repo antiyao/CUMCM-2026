@@ -1,2 +1,0 @@
-month,planned_grid,contract_grid,charge,discharge,emergency,unused,unused_pv,unused_purchased,original_fee,increase_fee,decrease_penalty,refund,emergency_fee,total_fee,contract_increase,contract_decrease,emergency_events,emergency_intervals
-2025-02,539891.3061698402,539891.3061698402,153649.81818293457,123877.18921645163,126.13334700764518,43273.41235036489,9707.841371946452,33565.570978418444,330675.2549111612,0.0,0.0,0.0,785.7455483669963,331461.0004595282,0.0,0.0,3,4
